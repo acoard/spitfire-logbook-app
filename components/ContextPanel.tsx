@@ -7,7 +7,6 @@ import { FolderOpen, Plane, FileText, ChevronDown, ChevronUp } from 'lucide-reac
 interface ContextPanelProps {
   selectedEntry: LogEntry | null;
 }
-
 type Tab = 'MISSION' | 'AIRCRAFT';
 
 const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
