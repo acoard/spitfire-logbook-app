@@ -1,0 +1,194 @@
+import React, { useEffect, useMemo } from 'react';
+import { MapContainer, TileLayer, Marker, Popup, Polyline, useMap } from 'react-leaflet';
+import L from 'leaflet';
+import { LogEntry, AircraftCategory } from '../types';
+
+// Fix for default Leaflet icon not showing
+const createIcon = (color: string) => {
+  return L.divIcon({
+    className: 'custom-div-icon',
+    html: `<div style="background-color: ${color}; width: 14px; height: 14px; border-radius: 50%; border: 2px solid white; box-shadow: 0 2px 4px rgba(0,0,0,0.4);"></div>`,
+    iconSize: [14, 14],
+    iconAnchor: [7, 7]
+  });
+};
+
+interface MapPanelProps {
+  entries: LogEntry[];
+  selectedEntry: LogEntry | null;
+  onMarkerSelect: (entry: LogEntry) => void;
+  shouldCenter: boolean;
+}
+
+// Robust coordinate validation
+const isValidCoord = (val: any): boolean => {
+  return typeof val === 'number' && !isNaN(val) && isFinite(val);
+};
+
+// Component to handle map movement
+const MapController: React.FC<{ center: [number, number]; zoom: number; shouldCenter: boolean }> = ({ center, zoom, shouldCenter }) => {
+  const map = useMap();
+  useEffect(() => {
+    if (shouldCenter && isValidCoord(center[0]) && isValidCoord(center[1])) {
+      try {
+        map.flyTo(center, zoom, { duration: 1.5 });
+      } catch (e) {
+        console.warn("Map flyTo failed:", e);
+      }
+    }
+  }, [center, zoom, map, shouldCenter]);
+  return null;
+};
+
+const MapPanel: React.FC<MapPanelProps> = ({ entries, selectedEntry, onMarkerSelect, shouldCenter }) => {
+  
+  // Calculate map center based on selection with validation
+  // Default to English Channel/Europe view
+  let centerPosition: [number, number] = [50.5, 0.0]; 
+
+  if (selectedEntry && selectedEntry.origin && isValidCoord(selectedEntry.origin.lat) && isValidCoord(selectedEntry.origin.lng)) {
+    centerPosition = [selectedEntry.origin.lat, selectedEntry.origin.lng];
+  }
+
+  const zoomLevel = selectedEntry ? 7 : 5;
+
+  const getColor = (cat: AircraftCategory) => {
+    switch (cat) {
+      case AircraftCategory.TRAINING: return '#EAB308'; // yellow-500
+      case AircraftCategory.FIGHTER: return '#DC2626'; // red-600
+      case AircraftCategory.TRANSPORT: return '#3B82F6'; // blue-500
+      default: return '#64748B';
+    }
+  };
+
+  // Pre-filter entries to ensure we ONLY render valid data
+  const validEntries = useMemo(() => {
+    return entries.filter(entry => 
+      entry.origin && 
+      isValidCoord(entry.origin.lat) && 
+      isValidCoord(entry.origin.lng)
+    );
+  }, [entries]);
+
+  return (
+    <div className="h-full w-full relative z-0">
+      <MapContainer 
+        center={centerPosition} 
+        zoom={zoomLevel} 
+        // style={{ height: "100%", width: "100%", background: '#e5e5e5', filter: 'sepia(0.2) contrast(1.1)' }}
+        style={{ height: "100%", width: "100%", background: '#e5e5e5', filter: 'sepia(0.1) contrast(1)' }}
+        // style={{ height: "100%", width: "100%", background: '#e5e5e5' }}
+        scrollWheelZoom={true}
+      >
+        <TileLayer
+          attribution='Tiles &copy; Esri &mdash; Esri, DeLorme, NAVTEQ, TomTom, Intermap, iPC, USGS, FAO, NPS, NRCAN, GeoBase, Kadaster NL, Ordnance Survey, Esri Japan, METI, Esri China (Hong Kong), and the GIS User Community'
+          url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
+        />
+        
+        <MapController center={centerPosition} zoom={zoomLevel} shouldCenter={shouldCenter} />
+
+        {/* Render Routes (Polylines) first so markers sit on top */}
+        {validEntries.map((entry) => {
+             // Only draw line if there is a distinct destination and coordinates are valid
+             if (
+                entry.destination && 
+                isValidCoord(entry.destination.lat) && 
+                isValidCoord(entry.destination.lng) &&
+                (entry.origin.lat !== entry.destination.lat || entry.origin.lng !== entry.destination.lng)
+             ) {
+                const isActive = selectedEntry?.id === entry.id;
+                return (
+                    <Polyline 
+                        key={`line-${entry.id}`}
+                        positions={[
+                            [entry.origin.lat, entry.origin.lng],
+                            [entry.destination.lat, entry.destination.lng]
+                        ]}
+                        pathOptions={{ 
+                            color: getColor(entry.aircraftCategory),
+                            weight: isActive ? 4 : 2,
+                            opacity: isActive ? 1 : 0.4,
+                            dashArray: isActive ? undefined : '5, 10'
+                        }}
+                    />
+                )
+             }
+             return null;
+        })}
+
+        {/* Render Markers */}
+        {validEntries.map((entry) => {
+          return (
+            <Marker
+              key={`marker-${entry.id}`}
+              position={[entry.origin.lat, entry.origin.lng]}
+              icon={createIcon(getColor(entry.aircraftCategory))}
+              opacity={selectedEntry?.id === entry.id || selectedEntry === null ? 1 : 0.6}
+              zIndexOffset={selectedEntry?.id === entry.id ? 1000 : 0}
+              eventHandlers={{
+                  click: () => {
+                      onMarkerSelect(entry);
+                  }
+              }}
+            >
+              <Popup className="font-serif">
+                <div className="p-1 min-w-[150px]">
+                  <h3 className="font-bold text-sm border-b pb-1 mb-1 text-stone-800">{entry.origin.name}</h3>
+                  <div className="text-xs text-stone-600 space-y-1">
+                    <p><span className="font-semibold">Date:</span> {entry.date}</p>
+                    <p><span className="font-semibold">Aircraft:</span> {entry.aircraftType}</p>
+                    <p><span className="font-semibold">Duty:</span> {entry.duty}</p>
+                    {entry.isSignificant && (
+                         <p className="text-red-700 font-bold mt-1 bg-red-50 p-1 border border-red-100 text-center uppercase text-[10px]">High Priority Event</p>
+                    )}
+                  </div>
+                </div>
+              </Popup>
+            </Marker>
+          );
+        })}
+        
+        {/* Destination Marker for selected entry if different */}
+        {selectedEntry && 
+         selectedEntry.destination && 
+         isValidCoord(selectedEntry.destination.lat) && 
+         isValidCoord(selectedEntry.destination.lng) && (
+             (selectedEntry.origin.lat !== selectedEntry.destination.lat || selectedEntry.origin.lng !== selectedEntry.destination.lng) && (
+                <Marker
+                    position={[selectedEntry.destination.lat, selectedEntry.destination.lng]}
+                    icon={createIcon(getColor(selectedEntry.aircraftCategory))}
+                    zIndexOffset={1001}
+                >
+                     <Popup className="font-serif">
+                        <div className="p-1">
+                            <h3 className="font-bold text-sm border-b pb-1 mb-1">{selectedEntry.destination.name}</h3>
+                            <p className="text-xs">Destination</p>
+                        </div>
+                    </Popup>
+                </Marker>
+             )
+        )}
+
+      </MapContainer>
+
+      {/* Map Legend Overlay */}
+      <div className="absolute bottom-6 right-6 bg-[#f4f1ea] p-3 rounded-sm shadow-xl border-2 border-stone-400 text-xs font-serif z-[400] transform rotate-1">
+        <h4 className="font-bold mb-2 text-stone-800 border-b border-stone-300 pb-1">MAP KEY</h4>
+        <div className="flex items-center gap-2 mb-1.5">
+            <span className="w-3 h-3 rounded-full bg-yellow-500 border border-stone-600 shadow-sm"></span>
+            <span className="font-typewriter text-stone-700">TRAINING</span>
+        </div>
+        <div className="flex items-center gap-2 mb-1.5">
+            <span className="w-3 h-3 rounded-full bg-red-600 border border-stone-600 shadow-sm"></span>
+            <span className="font-typewriter text-stone-700">COMBAT</span>
+        </div>
+        <div className="flex items-center gap-2">
+            <span className="w-3 h-3 rounded-full bg-blue-500 border border-stone-600 shadow-sm"></span>
+            <span className="font-typewriter text-stone-700">TRANSPORT</span>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default MapPanel;

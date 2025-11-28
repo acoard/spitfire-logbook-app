@@ -1,0 +1,5 @@
+{
+  "name": "The Pilot's Journey",
+  "description": "An interactive dual-panel visualization of a WWII pilot's logbook, linking historical flight records with geospatial mapping and AI-enhanced historical context.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,158 @@
+import React from 'react';
+import { X, Award, User, FileText, Stamp } from 'lucide-react';
+
+interface PilotProfileModalProps {
+  isOpen: boolean;
+  onClose: () => void;
+}
+
+const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }) => {
+  if (!isOpen) return null;
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 bg-stone-900/80 backdrop-blur-sm animate-in fade-in duration-300">
+      <div className="bg-[#f4f1ea] w-full max-w-4xl max-h-[90vh] overflow-y-auto rounded-sm shadow-2xl relative flex flex-col md:flex-row border-4 border-stone-800">
+        
+        {/* Paper Texture Overlay */}
+        <div className="absolute inset-0 pointer-events-none opacity-40 bg-[url('https://www.transparenttextures.com/patterns/aged-paper.png')] z-0"></div>
+
+        {/* Close Button */}
+        <button 
+          onClick={onClose}
+          className="absolute top-4 right-4 z-50 p-2 text-stone-600 hover:text-red-700 hover:bg-red-50 rounded-full transition-colors"
+        >
+          <X className="w-6 h-6" />
+        </button>
+
+        {/* LEFT PANEL: BIOGRAPHY */}
+        <div className="flex-1 p-8 md:border-r-2 border-stone-300 relative z-10">
+          <div className="mb-6 flex items-center gap-3 border-b-2 border-stone-800 pb-4">
+             <div className="w-16 h-16 bg-stone-300 border-2 border-stone-400 flex items-center justify-center shadow-inner">
+                <User className="w-8 h-8 text-stone-500" />
+             </div>
+             <div>
+                <h2 className="font-typewriter text-2xl font-bold text-stone-900 uppercase tracking-widest">Service Record</h2>
+                <p className="font-mono text-xs text-stone-600">ROYAL AIR FORCE — PERSONNEL FORM</p>
+             </div>
+          </div>
+
+          <div className="prose prose-stone prose-sm font-old-print text-stone-800 leading-relaxed">
+            <h3 className="font-typewriter text-lg font-bold uppercase text-stone-900 border-b border-stone-400 mb-2">I. Personal Particulars</h3>
+            
+            <p className="mb-4">
+              <span className="font-bold">Name:</span> Captain H. A. Glen (Robin)<br/>
+              <span className="font-bold">Service Period:</span> 1941 – 1946<br/>
+              <span className="font-bold">Total Flying Hours:</span> 741 hrs 05 mins (as of Mar 1946)
+            </p>
+
+            <div className="bg-stone-200/50 p-3 mb-4 border-l-4 border-stone-400 italic text-xs">
+              <span className="font-bold not-italic">Note on Origins:</span> Records indicate birth in Cape Town, S. Africa (Sept 1, 1935). This date conflicts with wartime service timelines (Wings achieved Dec 1941).
+            </div>
+
+            <p>
+              Captain Harry Albert Glen, known as Robin, was a decorated Royal Air Force pilot whose service spanned intensive WWII operations and crucial post-war logistical ferry duties.
+              His early training involved flying aircraft types such as the Master II, Spitfire I, Typhoon, and Hurricane IIc at various training and operational units including Kirton-in-Lindsay and Aston Down.
+            </p>
+
+            <h4 className="font-bold font-typewriter uppercase text-xs mt-4 mb-2 text-stone-600">World War II Operations</h4>
+            <p>
+              By June 1944, Glen had entered operational service flying Spitfire IX aircraft with the 313 (Czech) Squadron.
+              This period placed him directly in one of the most significant military actions of the war:
+            </p>
+            <ul className="list-disc pl-5 space-y-1 mb-4">
+              <li><strong className="font-typewriter text-xs uppercase">D-Day Support:</strong> Flew a Beach Head Patrol on June 6, 1944. Logbook marginal notes confirm his unit "acted as the invasion flight".</li>
+              <li><strong className="font-typewriter text-xs uppercase">Combat Missions:</strong> Duties included Convoy Patrols, Dive Bombing, and Front Line Patrols. Participated in long-range Bomber Escorts to targets such as Hamburg and Stuttgart.</li>
+              <li>Logged a total of 53 operational sorties during the war.</li>
+            </ul>
+
+            <h4 className="font-bold font-typewriter uppercase text-xs mt-4 mb-2 text-stone-600">Post-War Service</h4>
+            <p>
+              Following VE-Day (May 1945), Glen transferred to logistical air service with 202 Staging Post. Operating multi-engine aircraft like the Dakota and Sunderland, he executed extensive ferry runs across the Indian subcontinent, connecting Karachi, Calcutta, Delhi, and Rangoon.
+            </p>
+          </div>
+        </div>
+
+        {/* RIGHT PANEL: ASSESSMENTS & AWARDS */}
+        <div className="flex-1 p-8 bg-stone-100/50 relative z-10">
+           {/* Stamp Effect */}
+           <div className="absolute top-10 right-10 transform rotate-12 opacity-80 pointer-events-none border-4 border-red-900 text-red-900 p-2 rounded-sm font-typewriter font-bold text-xl uppercase tracking-widest">
+              Verified
+           </div>
+
+           <h3 className="font-typewriter text-lg font-bold uppercase text-stone-900 border-b border-stone-400 mb-6">II. Assessments & Decorations</h3>
+
+           {/* Decorations */}
+           <div className="mb-8">
+             <div className="flex items-start gap-4 bg-amber-50 p-4 border border-amber-200 shadow-sm relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-1 h-full bg-red-600"></div>
+                <Award className="w-10 h-10 text-amber-600 flex-shrink-0" />
+                <div>
+                   <h4 className="font-typewriter font-bold text-lg text-stone-900">Czechoslovak Military Cross</h4>
+                   <p className="font-old-print text-sm text-stone-700 mt-1">
+                     Awarded for "active fighting against the enemy." Highlighted in correspondence as the highest Czech decoration for operational service.
+                   </p>
+                </div>
+             </div>
+           </div>
+
+           {/* Assessment Table */}
+           <div className="mb-6">
+              <div className="flex justify-between items-end mb-2">
+                 <h4 className="font-typewriter text-sm font-bold uppercase text-stone-700">Summary of Flying & Assessments</h4>
+                 <span className="font-mono text-xs text-stone-500">Form 414A (May 26, 1944)</span>
+              </div>
+              
+              <table className="w-full text-sm font-old-print border-collapse border border-stone-400 bg-white">
+                 <thead className="bg-stone-200 font-typewriter text-xs uppercase text-stone-600">
+                    <tr>
+                       <th className="border border-stone-400 p-2 text-left">Ability Category</th>
+                       <th className="border border-stone-400 p-2 text-left">Assessment</th>
+                    </tr>
+                 </thead>
+                 <tbody>
+                    <tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">As a Pilot</td>
+                       <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Good Average</td>
+                    </tr>
+                    <tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">As Pilot-Navigator</td>
+                       <td className="border border-stone-400 p-2 text-stone-400 italic">N/A</td>
+                    </tr>
+                    <tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">In Bombing</td>
+                       <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Average</td>
+                    </tr>
+                    <tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">As Air Gunner</td>
+                       <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Average</td>
+                    </tr>
+                    <tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">W/S – S/H</td>
+                       <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Good Average</td>
+                    </tr>
+                 </tbody>
+              </table>
+              <p className="mt-2 font-mono text-xs text-stone-500 italic">
+                 "Any points in flying or airmanship which should be watched" — [BLANK]
+              </p>
+           </div>
+           
+           <div className="mt-8 border-t-2 border-stone-300 pt-4 flex justify-between items-end">
+             <div>
+                <p className="font-typewriter text-xs uppercase text-stone-500">Officer Commanding</p>
+                <div className="font-handwriting text-xl text-stone-800 mt-2">S/Ldr. J. Smith</div>
+             </div>
+             <div className="text-right">
+                <p className="font-typewriter text-xs uppercase text-stone-500">Date</p>
+                <div className="font-typewriter text-sm text-stone-800 mt-1">26 MAY 1944</div>
+             </div>
+           </div>
+
+        </div>
+
+      </div>
+    </div>
+  );
+};
+
+export default PilotProfileModal;
