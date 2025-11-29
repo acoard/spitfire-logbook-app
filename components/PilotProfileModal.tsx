@@ -1,5 +1,6 @@
-import React from 'react';
-import { X, Award, User, FileText, Stamp } from 'lucide-react';
+import React, { useState } from 'react';
+import { X, Award, User, FileText, Stamp, ExternalLink } from 'lucide-react';
+import ImageModal from './ImageModal';
 
 interface PilotProfileModalProps {
   isOpen: boolean;
@@ -7,6 +8,8 @@ interface PilotProfileModalProps {
 }
 
 const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }) => {
+  const [showReportCard, setShowReportCard] = useState(false);
+
   if (!isOpen) return null;
 
   return (
@@ -127,14 +130,32 @@ const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }
                        <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Average</td>
                     </tr>
                     <tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">Rocket Propelled Bombs</td>
+                       <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Above Average</td>
+                    </tr>
+                       <td className="border border-stone-400 p-2 font-bold text-stone-800">Areas Needing Improvement</td>
+                       <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">None</td>                   <tr>
+                    </tr>
+                    {/* <tr>
                        <td className="border border-stone-400 p-2 font-bold text-stone-800">W/S – S/H</td>
                        <td className="border border-stone-400 p-2 font-handwriting text-lg text-blue-900">Good Average</td>
-                    </tr>
+                    </tr> */}
                  </tbody>
               </table>
+              <button 
+                onClick={() => setShowReportCard(true)}
+                className="mt-3 text-xs flex items-center gap-1 text-amber-700 hover:text-amber-900 font-bold font-typewriter uppercase tracking-wider transition-colors"
+              >
+                <ExternalLink className="w-3 h-3" /> View Original Report Card
+              </button>
               <p className="mt-2 font-mono text-xs text-stone-500 italic">
                  "Any points in flying or airmanship which should be watched" — [BLANK]
               </p>
+              <p className="mt-4 font-mono text-[10px] text-stone-400 border-t border-stone-200 pt-2 leading-tight">
+                 * Historical Context: In RAF evaluations of this period, "Average" and "Good Average" denoted a fully proficient, reliable pilot trusted with operational duties. "Above Average" was rare, typically reserved for exceptional test-pilot level handling.
+              </p>
+              
+
            </div>
            
            <div className="mt-8 border-t-2 border-stone-300 pt-4 flex justify-between items-end">
@@ -151,6 +172,13 @@ const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }
         </div>
 
       </div>
+      
+      <ImageModal
+        isOpen={showReportCard}
+        onClose={() => setShowReportCard(false)}
+        imageSrc="report-card.png"
+        altText="Original Pilot Assessment Form 414A"
+      />
     </div>
   );
 };

@@ -3,6 +3,7 @@ import React, { useState, useRef, useEffect } from 'react';
 import { LogEntry } from '../types';
 import { AIRCRAFT_SPECS } from '../services/flightData';
 import { FolderOpen, Plane, FileText, ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from 'lucide-react';
+import ImageModal from './ImageModal';
 
 interface ContextPanelProps {
   selectedEntry: LogEntry | null;
@@ -250,36 +251,12 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                 </div>
              </div>
         </div>
-        {fullscreenImage && (
-            <div
-                className="fixed inset-0 z-40 flex items-center justify-center bg-black/80 p-4"
-                role="dialog"
-                aria-modal="true"
-                onClick={() => setFullscreenImage(null)}
-            >
-                <div
-                    className="relative max-h-full max-w-full"
-                    onClick={(e) => e.stopPropagation()}
-                >
-                    <button
-                        type="button"
-                        aria-label="Close fullscreen view"
-                        className="absolute -top-3 -right-3 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-stone-800 shadow"
-                        onClick={(e) => {
-                            e.stopPropagation();
-                            setFullscreenImage(null);
-                        }}
-                    >
-                        Close
-                    </button>
-                    <img
-                        src={fullscreenImage}
-                        alt="Handwritten logbook detail"
-                        className="max-w-[90vw] max-h-[90vh] object-contain rounded-md shadow-lg border border-white"
-                    />
-                </div>
-            </div>
-        )}
+        <ImageModal
+            isOpen={!!fullscreenImage}
+            onClose={() => setFullscreenImage(null)}
+            imageSrc={fullscreenImage}
+            altText="Handwritten logbook detail"
+        />
     </div>
   );
 };
