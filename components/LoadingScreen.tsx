@@ -41,7 +41,7 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ isLoaded, onEnter }) => {
                 <h3 className="font-typewriter text-sm text-stone-600 ml-1">Pilot Officer</h3>
                 <h2 className="font-handwriting text-3xl text-stone-700 mt-6 transform -rotate-1">Pilot's Flying Log Book</h2>
                 <p className="font-typewriter text-xs text-stone-500 mt-2 max-w-xs italic">
-                    "Official Record of Service including Operations Overlord & Market Garden"
+                    "Official Record of Service including Operations Overlord, aka D-Day"
                 </p>
               </div>
 
