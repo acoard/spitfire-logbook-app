@@ -16,6 +16,11 @@ export interface Coordinate {
   name: string;
 }
 
+export interface MissionBrief {
+  text?: string;
+  images?: string[];
+}
+
 export interface LogEntry {
   id: string;
   date: string;
@@ -29,7 +34,5 @@ export interface LogEntry {
   destination?: Coordinate; // Optional, some flights are local/patrols
   isSignificant: boolean; // For special highlighting
   historicalNote?: string; // Enhanced static historical context
-  handwrittenNoteImg?: string;
-  handwrittenNoteImgs?: string[];
-  handwrittenNoteTranscription?: string;
+  missionBrief?: MissionBrief;
 }

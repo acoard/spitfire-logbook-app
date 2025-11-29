@@ -2,7 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { LogEntry } from '../types';
 import { AIRCRAFT_SPECS } from '../services/flightData';
-import { FolderOpen, Plane, FileText, ChevronDown, ChevronUp } from 'lucide-react';
+import { FolderOpen, Plane, FileText, ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from 'lucide-react';
 
 interface ContextPanelProps {
   selectedEntry: LogEntry | null;
@@ -11,14 +11,14 @@ type Tab = 'MISSION' | 'AIRCRAFT';
 
 const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
   const [activeTab, setActiveTab] = useState<Tab>('MISSION');
-  const [showTranscription, setShowTranscription] = useState(false);
+  const [showBriefText, setShowBriefText] = useState(false);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Reset transcription view when entry changes
   useEffect(() => {
-    setShowTranscription(false);
+    setShowBriefText(false);
     setGalleryIndex(0);
     setFullscreenImage(null);
   }, [selectedEntry?.id]);
@@ -37,17 +37,17 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
 
   const isDDay = selectedEntry.date === '1944-06-06';
   const aircraftSpec = AIRCRAFT_SPECS[selectedEntry.aircraftType];
-  const galleryImages = selectedEntry.handwrittenNoteImgs?.length
-    ? selectedEntry.handwrittenNoteImgs
-    : selectedEntry.handwrittenNoteImg
-      ? [selectedEntry.handwrittenNoteImg]
-      : [];
+  const missionBrief = selectedEntry.missionBrief;
+  const missionBriefText = missionBrief?.text;
+  const galleryImages = missionBrief?.images ?? [];
   const galleryLength = galleryImages.length;
   const hasGalleryImages = galleryLength > 0;
   const galleryPosition = hasGalleryImages
     ? ((galleryIndex % galleryLength) + galleryLength) % galleryLength
     : 0;
   const activeGalleryImage = hasGalleryImages ? galleryImages[galleryPosition] : null;
+  const canNavigateGallery = galleryLength > 1;
+  const missionBriefVisible = Boolean(missionBriefText || hasGalleryImages);
   const goToPreviousImage = () => {
     if (!galleryLength) return;
     setGalleryIndex((prev) => (prev - 1 + galleryLength) % galleryLength);
@@ -107,8 +107,8 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                         </div>
                     )}
 
-                    {/* D-Day Handwritten Note Section */}
-                    {selectedEntry.handwrittenNoteTranscription && (
+                    {/* Mission Brief / Annotation */}
+                    {missionBriefVisible && (
                          <div className="mt-6 border-t border-stone-300 pt-4">
                             <h4 className="font-typewriter text-xs font-bold uppercase text-stone-600 mb-3 flex items-center gap-2">
                                 <span className="w-2 h-2 bg-stone-500 rounded-full"></span>
@@ -117,52 +117,88 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                             
                             {/* Image Container (Visual placeholder if image is missing) */}
                             {hasGalleryImages && (
-                                <div className="mb-3 border-4 border-white shadow-md rotate-1 transition-transform hover:rotate-0">
-                                    <div className="relative">
-                                        <img 
-                                            src={activeGalleryImage ?? undefined}
-                                            alt="Handwritten Logbook Note" 
-                                            className="w-full h-auto object-cover grayscale sepia contrast-125 cursor-zoom-in"
-                                            onError={(e) => {
-                                                (e.target as HTMLImageElement).src = 'https://placehold.co/600x200/e8e4db/57534e?text=Original+Handwritten+Note';
-                                            }}
-                                            onClick={() => activeGalleryImage && setFullscreenImage(activeGalleryImage)}
-                                        />
-                                        {galleryLength > 1 && (
-                                            <div className="absolute inset-0 flex items-center justify-between px-2 text-[10px] uppercase tracking-[0.3em] text-stone-600 pointer-events-none">
-                                                <span className="pointer-events-auto cursor-pointer bg-white/70 px-2 py-1 rounded-full text-stone-800" onClick={goToPreviousImage}>Prev</span>
-                                                <span className="pointer-events-auto cursor-pointer bg-white/70 px-2 py-1 rounded-full text-stone-800" onClick={goToNextImage}>Next</span>
-                                            </div>
-                                        )}
+                                <div className="space-y-2">
+                                    <div className="flex justify-between text-[10px] font-typewriter uppercase tracking-[0.3em] text-stone-600">
+                                        <button
+                                            type="button"
+                                            onClick={goToPreviousImage}
+                                            disabled={!canNavigateGallery}
+                                            className={`px-3 py-1 rounded-full border border-stone-300 bg-white/80 text-stone-700 transition ${
+                                                canNavigateGallery ? 'hover:border-stone-500 hover:text-stone-900' : 'cursor-not-allowed opacity-40'
+                                            }`}
+                                        >
+                                            Prev
+                                        </button>
+                                        <button
+                                            type="button"
+                                            onClick={goToNextImage}
+                                            disabled={!canNavigateGallery}
+                                            className={`px-3 py-1 rounded-full border border-stone-300 bg-white/80 text-stone-700 transition ${
+                                                canNavigateGallery ? 'hover:border-stone-500 hover:text-stone-900' : 'cursor-not-allowed opacity-40'
+                                            }`}
+                                        >
+                                            Next
+                                        </button>
                                     </div>
-                                    <div className="mt-2 flex items-center justify-between text-[10px] uppercase tracking-[0.3em] text-stone-600">
-                                        <span>Image {galleryPosition + 1}</span>
-                                        <span>{galleryLength} total</span>
+                                    <div className="mb-3 border-4 border-white shadow-md rotate-1 transition-transform hover:rotate-0">
+                                        <div className="relative">
+                                            <img 
+                                                src={activeGalleryImage ?? undefined}
+                                                alt="Mission brief note" 
+                                                className="w-full h-auto object-cover sepia-[0.5] cursor-zoom-in"
+                                                onError={(e) => {
+                                                    (e.target as HTMLImageElement).src = 'https://placehold.co/600x200/e8e4db/57534e?text=Original+Handwritten+Note';
+                                                }}
+                                                onClick={() => activeGalleryImage && setFullscreenImage(activeGalleryImage)}
+                                            />
+                                        </div>
+                                    </div>
+                                    <div className="flex items-center justify-between text-[10px] font-typewriter uppercase tracking-[0.3em] text-stone-600">
+                                        <button
+                                            type="button"
+                                            onClick={goToPreviousImage}
+                                            disabled={!canNavigateGallery}
+                                            className="flex items-center justify-center w-8 h-8 rounded-full border border-stone-300 bg-white/90 text-stone-600 transition hover:border-stone-500 hover:text-stone-900 disabled:cursor-not-allowed disabled:opacity-40"
+                                        >
+                                            <ChevronLeft className="w-3 h-3" />
+                                        </button>
+                                        <span>
+                                            Image {galleryPosition + 1} of {galleryLength}
+                                        </span>
+                                        <button
+                                            type="button"
+                                            onClick={goToNextImage}
+                                            disabled={!canNavigateGallery}
+                                            className="flex items-center justify-center w-8 h-8 rounded-full border border-stone-300 bg-white/90 text-stone-600 transition hover:border-stone-500 hover:text-stone-900 disabled:cursor-not-allowed disabled:opacity-40"
+                                        >
+                                            <ChevronRight className="w-3 h-3" />
+                                        </button>
                                     </div>
                                 </div>
                             )}
 
-                            {/* Transcription Toggle */}
-                            <div className="flex flex-col">
-                                <button 
-                                    onClick={() => setShowTranscription(!showTranscription)}
-                                    className="self-start text-[10px] font-typewriter uppercase tracking-widest text-stone-500 hover:text-amber-600 flex items-center gap-1 transition-colors focus:outline-none mb-2"
-                                >
-                                    {showTranscription ? (
-                                        <>Hide Transcription <ChevronUp className="w-3 h-3" /></>
-                                    ) : (
-                                        <>View Transcription <ChevronDown className="w-3 h-3" /></>
-                                    )}
-                                </button>
-                                
-                                <div 
-                                    className={`overflow-hidden transition-all duration-500 ease-in-out ${showTranscription ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'}`}
-                                >
-                                    <div className="bg-stone-100 p-3 border-l-2 border-amber-500 font-handwriting text-lg text-stone-700 leading-snug italic">
-                                        "{selectedEntry.handwrittenNoteTranscription}"
+                            {missionBriefText && (
+                                <div className="flex flex-col">
+                                    <button 
+                                        onClick={() => setShowBriefText(!showBriefText)}
+                                        className="self-start text-[10px] font-typewriter uppercase tracking-widest text-stone-500 hover:text-amber-600 flex items-center gap-1 transition-colors focus:outline-none mb-2"
+                                    >
+                                        {showBriefText ? (
+                                            <>Hide Text <ChevronUp className="w-3 h-3" /></>
+                                        ) : (
+                                            <>View Text <ChevronDown className="w-3 h-3" /></>
+                                        )}
+                                    </button>
+                                    
+                                    <div 
+                                        className={`overflow-hidden transition-all duration-500 ease-in-out ${showBriefText ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'}`}
+                                    >
+                                        <div className="bg-stone-100 p-3 border-l-2 border-amber-500 font-handwriting text-lg text-stone-700 leading-snug italic">
+                                            "{missionBriefText}"
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            )}
                          </div>
                     )}
                  </div>
