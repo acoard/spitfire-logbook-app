@@ -452,7 +452,9 @@ const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
             isMobileContextOpen ? 'max-h-[70vh] opacity-100 pointer-events-auto' : 'max-h-0 opacity-0 pointer-events-none'
           }`}
         >
-          <ContextPanel selectedEntry={selectedEntry} />
+          <div className="h-[65vh]">
+            <ContextPanel selectedEntry={selectedEntry} />
+          </div>
         </div>
       </section>
 
