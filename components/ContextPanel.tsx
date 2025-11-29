@@ -194,7 +194,7 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                                         className={`overflow-hidden transition-all duration-500 ease-in-out ${showBriefText ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'}`}
                                     >
                                         <div className="bg-stone-100 p-3 border-l-2 border-amber-500 font-handwriting text-lg text-stone-700 leading-snug italic">
-                                            "{activeSlideText}"
+                                            <div dangerouslySetInnerHTML={{ __html: activeSlideText }} />
                                         </div>
                                     </div>
                                 </div>
