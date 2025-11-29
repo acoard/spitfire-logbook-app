@@ -144,7 +144,7 @@ const LogbookPanel: React.FC<LogbookPanelProps> = ({
                                 )}
                                 {entry.date}
                                 {hasNote && !isSelected && (
-                                    <Paperclip className="w-3 h-3 text-red-800 absolute top-1 right-1 opacity-60" />
+                                    <Paperclip className="w-3 h-3 text-red-800 absolute top-1 right-1 opacity-60" aria-label="View Notes" />
                                 )}
                             </td>
 
@@ -175,7 +175,7 @@ const LogbookPanel: React.FC<LogbookPanelProps> = ({
                                 )}
                                 {hasNote && (
                                     <div className="absolute bottom-1 right-1">
-                                        <span className="text-[9px] font-typewriter text-red-800 uppercase bg-red-50 border border-red-200 px-1 rounded opacity-0 group-hover:opacity-100 transition-opacity">
+                                        <span className="text-[9px] font-typewriter text-red-800 uppercase bg-red-50 border border-red-200 px-1 rounded opacity-50 group-hover:opacity-100 transition-opacity">
                                             See Notes
                                         </span>
                                     </div>

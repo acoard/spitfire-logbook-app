@@ -97,8 +97,6 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                     {/* Historical Note */}
                     {selectedEntry.historicalNote ? (
                         <div className="bg-white p-4 shadow-sm border border-stone-300 transform -rotate-1 relative">
-                            {/* Pin effect */}
-                            <div className="absolute -top-3 left-1/2 w-3 h-3 rounded-full bg-red-800 shadow-sm border border-red-900"></div>
                             <p className="whitespace-pre-line">{selectedEntry.historicalNote}</p>
                         </div>
                     ) : (

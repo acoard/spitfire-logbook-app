@@ -1,4 +1,4 @@
-import React, { useState, useMemo, useRef, useEffect } from 'react';
+import React, { useState, useMemo, useRef, useEffect, useCallback } from 'react';
 import { ArrowLeftRight, ArrowUpDown, ChevronDown, ChevronUp } from 'lucide-react';
 import { FLIGHT_LOG } from './services/flightData';
 import { LogEntry, Phase } from './types';
@@ -7,10 +7,11 @@ import MapPanel from './components/MapPanel';
 import ContextPanel from './components/ContextPanel';
 import PilotProfileModal from './components/PilotProfileModal';
 
-const MIN_SIDE = 360;
-const MAX_SIDE = 900;
-const MIN_RATIO = 0.35;
-const MAX_RATIO = 0.85;
+const MIN_SIDE = 0;
+const MAX_SIDE = 1900;
+const MIN_RATIO = 0.3;
+const MAX_RATIO = 1;
+const DRAG_HANDLE_WIDTH = 80; // tailwind w-20
 
 const clamp = (value: number, min: number, max: number) => Math.min(Math.max(value, min), max);
 
@@ -49,11 +50,17 @@ const useMediaQuery = (query: string) => {
   return matches;
 };
 
-const layoutPresets = {
+type PresetConfig = {
+  ratio: number;
+  side?: number;
+  sideFraction?: number;
+};
+
+const layoutPresets: Record<'balanced' | 'logbook' | 'map', PresetConfig> = {
   balanced: { side: 560, ratio: 0.64 },
-  logbook: { side: 880, ratio: 0.84 },
-  map: { side: 420, ratio: 0.48 }
-} as const;
+  logbook: { sideFraction: 1, ratio: 1 },
+  map: { sideFraction: 0, ratio: 0.3 }
+};
 
 type PresetKey = keyof typeof layoutPresets;
 type LayoutPreset = PresetKey | 'custom';
@@ -70,7 +77,7 @@ const App: React.FC = () => {
   const [filterPhase, setFilterPhase] = useState<Phase | 'ALL'>('ALL');
   const [shouldCenterMap, setShouldCenterMap] = useState(true);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
-  const [sidePanelWidth, setSidePanelWidth] = useState(layoutPresets.balanced.side);
+  const [sidePanelWidth, setSidePanelWidth] = useState(layoutPresets.balanced.side ?? 0);
   const [logbookHeightRatio, setLogbookHeightRatio] = useState(layoutPresets.balanced.ratio);
   const [activePreset, setActivePreset] = useState<LayoutPreset>('balanced');
   const [isDraggingSide, setIsDraggingSide] = useState(false);
@@ -83,13 +90,15 @@ const App: React.FC = () => {
   const leftPanelRef = useRef<HTMLDivElement>(null);
   const horizontalDragData = useRef({
     startX: 0,
-    initialWidth: layoutPresets.balanced.side
+    initialWidth: layoutPresets.balanced.side ?? 0,
+    maxWidth: MAX_SIDE
   });
   const verticalDragData = useRef({
     startY: 0,
     initialRatio: layoutPresets.balanced.ratio,
     containerHeight: 1
   });
+  const layoutShellRef = useRef<HTMLDivElement>(null);
   const layoutMenuRef = useRef<HTMLDivElement>(null);
   const layoutMenuButtonRef = useRef<HTMLButtonElement>(null);
 
@@ -139,11 +148,20 @@ const App: React.FC = () => {
     };
   }, [isDraggingSide, isDraggingStack]);
 
+  const getMaxSideWidth = useCallback(() => {
+    const containerWidth =
+      layoutShellRef.current?.getBoundingClientRect().width ??
+      (typeof window !== 'undefined' ? window.innerWidth : MAX_SIDE);
+    const maxByContainer = Math.max(0, containerWidth - DRAG_HANDLE_WIDTH);
+    return clamp(maxByContainer, MIN_SIDE, MAX_SIDE);
+  }, []);
+
   useEffect(() => {
     if (!isDraggingSide) return;
     const handleMouseMove = (event: MouseEvent) => {
       const delta = event.clientX - horizontalDragData.current.startX;
-      const newWidth = clamp(horizontalDragData.current.initialWidth + delta, MIN_SIDE, MAX_SIDE);
+      const maxWidth = Math.max(MIN_SIDE, horizontalDragData.current.maxWidth);
+      const newWidth = clamp(horizontalDragData.current.initialWidth + delta, MIN_SIDE, maxWidth);
       setSidePanelWidth(newWidth);
     };
     const handleMouseUp = () => setIsDraggingSide(false);
@@ -155,6 +173,18 @@ const App: React.FC = () => {
       window.removeEventListener('mouseup', handleMouseUp);
     };
   }, [isDraggingSide]);
+
+  useEffect(() => {
+    if (typeof window === 'undefined') return;
+    const handleResize = () => {
+      setSidePanelWidth((prev) => clamp(prev, MIN_SIDE, getMaxSideWidth()));
+    };
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, [getMaxSideWidth, isDesktop]);
 
   useEffect(() => {
     if (!isDraggingStack) return;
@@ -198,7 +228,12 @@ const App: React.FC = () => {
 
   const handlePresetApply = (preset: PresetKey) => {
     const config = layoutPresets[preset];
-    setSidePanelWidth(config.side);
+    const maxWidth = getMaxSideWidth();
+    const targetWidth =
+      typeof config.sideFraction === 'number'
+        ? config.sideFraction * maxWidth
+        : clamp(config.side ?? maxWidth, MIN_SIDE, maxWidth);
+    setSidePanelWidth(targetWidth);
     setLogbookHeightRatio(config.ratio);
     setActivePreset(preset);
   };
@@ -214,9 +249,11 @@ const App: React.FC = () => {
     event.preventDefault();
     setActivePreset('custom');
     setIsLayoutMenuOpen(false);
+    const maxWidth = getMaxSideWidth();
     horizontalDragData.current = {
       startX: event.clientX,
-      initialWidth: sidePanelWidth
+      initialWidth: sidePanelWidth,
+      maxWidth
     };
     setIsDraggingSide(true);
   };
@@ -236,13 +273,14 @@ const App: React.FC = () => {
   };
 
   const desktopLayout = (
-    <div className="flex flex-1 overflow-hidden bg-stone-900/30">
+    <div ref={layoutShellRef} className="flex flex-1 overflow-hidden bg-stone-900/30">
       <div
         ref={leftPanelRef}
         className="flex flex-col h-full bg-[#f4f1ea] shadow-[10px_0_30px_rgba(0,0,0,0.25)] border-r-8 border-stone-900 transition-[width] duration-300 ease-out"
         style={{
-          width: `min(100%, ${sidePanelWidth}px)`,
-          minWidth: `${MIN_SIDE}px`
+          width: `${sidePanelWidth}px`,
+          minWidth: 0,
+          flexBasis: `${sidePanelWidth}px`
         }}
       >
         <div
@@ -299,7 +337,7 @@ const App: React.FC = () => {
           aria-label="Resize map panel"
           onMouseDown={handleHorizontalDragStart}
           onDoubleClick={handleLayoutReset}
-          className={`relative flex flex-col items-center gap-3 px-2 py-4 w-12 h-full cursor-col-resize bg-stone-900/80 text-stone-200 transition-colors ${
+          className={`relative flex flex-col items-center gap-3 px-2 py-4 w-8 max-w-8 h-full cursor-col-resize bg-stone-900/80 text-stone-200 transition-colors ${
             isDraggingSide ? 'bg-amber-500/60 text-stone-900' : 'hover:bg-amber-500/30 hover:text-stone-900'
           }`}
           title="Drag to adjust map width"
