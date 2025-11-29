@@ -83,7 +83,7 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
              </button>
         </div>
 
-        <div className="p-5 relative z-10 overflow-y-auto max-h-[300px] scrollbar-thin scrollbar-thumb-stone-400">
+        <div className="p-5 relative z-10 overflow-y-auto  scrollbar-thin scrollbar-thumb-stone-400">
              {/* Title */}
              <h3 className="font-typewriter text-lg font-bold text-stone-900 mb-1 border-b-2 border-stone-800 inline-block pb-1">
                 {selectedEntry.origin.name} 
