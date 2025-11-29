@@ -38,16 +38,18 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
   const isDDay = selectedEntry.date === '1944-06-06';
   const aircraftSpec = AIRCRAFT_SPECS[selectedEntry.aircraftType];
   const missionBrief = selectedEntry.missionBrief;
-  const missionBriefText = missionBrief?.text;
-  const galleryImages = missionBrief?.images ?? [];
-  const galleryLength = galleryImages.length;
-  const hasGalleryImages = galleryLength > 0;
-  const galleryPosition = hasGalleryImages
+  const missionSlides = missionBrief?.slides ?? [];
+  const galleryLength = missionSlides.length;
+  const hasMissionSlides = galleryLength > 0;
+  const galleryPosition = hasMissionSlides
     ? ((galleryIndex % galleryLength) + galleryLength) % galleryLength
     : 0;
-  const activeGalleryImage = hasGalleryImages ? galleryImages[galleryPosition] : null;
+  const activeMissionSlide = hasMissionSlides ? missionSlides[galleryPosition] : null;
+  const activeGalleryImage = activeMissionSlide?.image ?? null;
+  const activeSlideText = activeMissionSlide?.text;
   const canNavigateGallery = galleryLength > 1;
-  const missionBriefVisible = Boolean(missionBriefText || hasGalleryImages);
+  const missionBriefVisible = hasMissionSlides;
+  const hasSlideText = Boolean(activeSlideText);
   const goToPreviousImage = () => {
     if (!galleryLength) return;
     setGalleryIndex((prev) => (prev - 1 + galleryLength) % galleryLength);
@@ -114,7 +116,7 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                             </h4>
                             
                             {/* Image Container (Visual placeholder if image is missing) */}
-                            {hasGalleryImages && (
+                            {hasMissionSlides && (
                                 <div className="space-y-2">
                                     <div className="flex justify-between text-[10px] font-typewriter uppercase tracking-[0.3em] text-stone-600">
                                         <button
@@ -175,7 +177,7 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                                 </div>
                             )}
 
-                            {missionBriefText && (
+                            {hasSlideText && (
                                 <div className="flex flex-col">
                                     <button 
                                         onClick={() => setShowBriefText(!showBriefText)}
@@ -192,7 +194,7 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                                         className={`overflow-hidden transition-all duration-500 ease-in-out ${showBriefText ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'}`}
                                     >
                                         <div className="bg-stone-100 p-3 border-l-2 border-amber-500 font-handwriting text-lg text-stone-700 leading-snug italic">
-                                            "{missionBriefText}"
+                                            "{activeSlideText}"
                                         </div>
                                     </div>
                                 </div>

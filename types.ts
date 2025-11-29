@@ -16,9 +16,13 @@ export interface Coordinate {
   name: string;
 }
 
-export interface MissionBrief {
+export interface MissionBriefSlide {
+  image: string;
   text?: string;
-  images?: string[];
+}
+
+export interface MissionBrief {
+  slides: MissionBriefSlide[];
 }
 
 export interface LogEntry {

@@ -149,11 +149,16 @@ export const FLIGHT_LOG: LogEntry[] = [
         isSignificant: true,
         historicalNote: "D-Day: Operation Overlord. 313 Squadron provided air cover for the invasion fleet. 'Invasion flight' implies direct support of the landings.",
         missionBrief: {
-            images: [
-                `${BASE_ASSET_URL}dday-note.png`,
-                `${BASE_ASSET_URL}dday-full.jpg`
-            ],
-            text: "Robin's flight notes for the day of D-Day: At our very detailed and comprehensive 'briefing' on the evening before the invasion - we were told that the outcome of the War required the armies to get safely ashore at all costs. And - as far as the 2nd Tactical Air Force was concerned there were enough pilots and aircraft in reserve for all squadrons to suffer 90% casualties on the first day - and they'd be fully up to strength and operational in pilots and planes on Day 2."
+            slides: [
+                {
+                    image: `${BASE_ASSET_URL}dday-note.png`,
+                    text: "Robin's flight notes for the day of D-Day: At our very detailed and comprehensive 'briefing' on the evening before the invasion - we were told that the outcome of the War required the armies to get safely ashore at all costs. And - as far as the 2nd Tactical Air Force was concerned there were enough pilots and aircraft in reserve for all squadrons to suffer 90% casualties on the first day - and they'd be fully up to strength and operational in pilots and planes on Day 2."
+                },
+                {
+                    image: `${BASE_ASSET_URL}dday-full.jpg`,
+                    text: "Full logbook spread recorded immediately after Operation Overlord, showing the patrol assignment for 313 Squadron and the hardened tone of the invasion orders."
+                }
+            ]
         },
     },
     {
@@ -182,7 +187,15 @@ export const FLIGHT_LOG: LogEntry[] = [
         origin: LOCATIONS.TANGMERE,
         destination: LOCATIONS.B10_PLUMETOT,
         isSignificant: true,
-        historicalNote: "Relocation to an Advanced Landing Ground (ALG) in Normandy allowed the squadron to operate closer to the front lines, increasing loiter time over targets."
+        historicalNote: "Robin moves into France, just behind the front line, and lives under shellfire.",
+        missionBrief: {
+            slides: [
+                {
+                    image: `${BASE_ASSET_URL}063.jpg`,
+                    text: "The first of 2 nights just behind the front line – under shellfire"
+                }
+            ]
+        },
     },
     // NEW ENTRIES (July 1944)
     {
