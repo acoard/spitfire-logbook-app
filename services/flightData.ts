@@ -213,7 +213,7 @@ export const FLIGHT_LOG: LogEntry[] = [
         historicalNote: "E/A stands for Enemy Aircraft. This entry confirms active engagement where defensive fire (flak) or aggressive maneuvering forced a German plane to retreat."
     },
     {
-        id: 'new-2',
+        id: '15',
         date: '1944-07-06',
         phase: Phase.COMBAT,
         aircraftType: 'Spitfire IX',
@@ -224,7 +224,20 @@ export const FLIGHT_LOG: LogEntry[] = [
         origin: LOCATIONS.B10_PLUMETOT,
         destination: LOCATIONS.B10_PLUMETOT,
         isSignificant: true,
-        historicalNote: "A close call with Anti-Aircraft fire (Flak). Damage to the engine cowling at 15,000ft indicates intense German ground defenses protecting the bombers' target."
+        historicalNote: "A close call with Anti-Aircraft fire (often known as 'flak', but here called 'ack ack' in Robin's notes). Damage to the engine cowling at 15,000ft indicates intense German ground defenses protecting the bombers' target. Damage to the engine cowling means Robin was very close to being shot down behind enemy lines.",
+        missionBrief: {
+            slides: [
+                {
+                    image: `${BASE_ASSET_URL}ack-ack-notes.png`,
+                    text: "The USAAF bombers showed tremendous discipline in their daylight raids on Caen. The pattern bombing was devastating - so was the ack ack. <br><br>Just one flight (4 planes). We flew into occupied France at about $15,000'$ and dove down for a low level sweep in open formation. At one point we swept across a Luftwaffe airfield and I wiped out the crew of an A.A. post scrambling to train their guns on the landing planes."
+                },
+                {
+                    image: `${BASE_ASSET_URL}064.jpg`,
+                    text: "Robin's note pinpoints the ack ack burst at 15,000 ft and the resulting damage to the engine cowling while escorting bombers."
+                }
+
+            ]
+        }
     },
     // NEW ENTRY (Oct 1944)
     {
