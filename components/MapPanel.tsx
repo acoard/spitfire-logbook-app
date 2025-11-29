@@ -18,6 +18,7 @@ interface MapPanelProps {
   selectedEntry: LogEntry | null;
   onMarkerSelect: (entry: LogEntry) => void;
   shouldCenter: boolean;
+  resizeSignal?: number;
 }
 
 // Robust coordinate validation
@@ -25,8 +26,8 @@ const isValidCoord = (val: any): boolean => {
   return typeof val === 'number' && !isNaN(val) && isFinite(val);
 };
 
-// Component to handle map movement
-const MapController: React.FC<{ center: [number, number]; zoom: number; shouldCenter: boolean }> = ({ center, zoom, shouldCenter }) => {
+// Component to handle map movement and responsive resizing
+const MapController: React.FC<{ center: [number, number]; zoom: number; shouldCenter: boolean; resizeSignal: number }> = ({ center, zoom, shouldCenter, resizeSignal }) => {
   const map = useMap();
   useEffect(() => {
     if (shouldCenter && isValidCoord(center[0]) && isValidCoord(center[1])) {
@@ -37,10 +38,14 @@ const MapController: React.FC<{ center: [number, number]; zoom: number; shouldCe
       }
     }
   }, [center, zoom, map, shouldCenter]);
+
+  useEffect(() => {
+    map.invalidateSize();
+  }, [map, resizeSignal]);
   return null;
 };
 
-const MapPanel: React.FC<MapPanelProps> = ({ entries, selectedEntry, onMarkerSelect, shouldCenter }) => {
+const MapPanel: React.FC<MapPanelProps> = ({ entries, selectedEntry, onMarkerSelect, shouldCenter, resizeSignal = 0 }) => {
   
   // Calculate map center based on selection with validation
   // Default to English Channel/Europe view
@@ -85,7 +90,7 @@ const MapPanel: React.FC<MapPanelProps> = ({ entries, selectedEntry, onMarkerSel
           url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}"
         />
         
-        <MapController center={centerPosition} zoom={zoomLevel} shouldCenter={shouldCenter} />
+        <MapController center={centerPosition} zoom={zoomLevel} shouldCenter={shouldCenter} resizeSignal={resizeSignal} />
 
         {/* Render Routes (Polylines) first so markers sit on top */}
         {validEntries.map((entry) => {
