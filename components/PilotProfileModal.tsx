@@ -50,7 +50,7 @@ const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }
             </div>
 
             <p>
-              Captain Harry Albert Glen, known as Robin, was a decorated Royal Air Force pilot whose service spanned intensive WWII operations and crucial post-war logistical ferry duties.
+              Pilot Officer Robin Glen was a decorated Royal Air Force pilot whose service spanned intensive WWII operations and crucial post-war logistical ferry duties.
               His early training involved flying aircraft types such as the Master II, Spitfire I, Typhoon, and Hurricane IIc at various training and operational units including Kirton-in-Lindsay and Aston Down.
             </p>
 
