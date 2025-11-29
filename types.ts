@@ -29,4 +29,7 @@ export interface LogEntry {
   destination?: Coordinate; // Optional, some flights are local/patrols
   isSignificant: boolean; // For special highlighting
   historicalNote?: string; // Enhanced static historical context
+  handwrittenNoteImg?: string;
+  handwrittenNoteImgs?: string[];
+  handwrittenNoteTranscription?: string;
 }

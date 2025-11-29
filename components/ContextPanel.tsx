@@ -12,11 +12,15 @@ type Tab = 'MISSION' | 'AIRCRAFT';
 const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
   const [activeTab, setActiveTab] = useState<Tab>('MISSION');
   const [showTranscription, setShowTranscription] = useState(false);
+  const [galleryIndex, setGalleryIndex] = useState(0);
+  const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Reset transcription view when entry changes
   useEffect(() => {
     setShowTranscription(false);
+    setGalleryIndex(0);
+    setFullscreenImage(null);
   }, [selectedEntry?.id]);
 
   if (!selectedEntry) {
@@ -33,6 +37,25 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
 
   const isDDay = selectedEntry.date === '1944-06-06';
   const aircraftSpec = AIRCRAFT_SPECS[selectedEntry.aircraftType];
+  const galleryImages = selectedEntry.handwrittenNoteImgs?.length
+    ? selectedEntry.handwrittenNoteImgs
+    : selectedEntry.handwrittenNoteImg
+      ? [selectedEntry.handwrittenNoteImg]
+      : [];
+  const galleryLength = galleryImages.length;
+  const hasGalleryImages = galleryLength > 0;
+  const galleryPosition = hasGalleryImages
+    ? ((galleryIndex % galleryLength) + galleryLength) % galleryLength
+    : 0;
+  const activeGalleryImage = hasGalleryImages ? galleryImages[galleryPosition] : null;
+  const goToPreviousImage = () => {
+    if (!galleryLength) return;
+    setGalleryIndex((prev) => (prev - 1 + galleryLength) % galleryLength);
+  };
+  const goToNextImage = () => {
+    if (!galleryLength) return;
+    setGalleryIndex((prev) => (prev + 1) % galleryLength);
+  };
 
   return (
     <div className={`
@@ -93,16 +116,29 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                             </h4>
                             
                             {/* Image Container (Visual placeholder if image is missing) */}
-                            {selectedEntry.handwrittenNoteImg && (
+                            {hasGalleryImages && (
                                 <div className="mb-3 border-4 border-white shadow-md rotate-1 transition-transform hover:rotate-0">
-                                    <img 
-                                        src={selectedEntry.handwrittenNoteImg} 
-                                        alt="Handwritten Logbook Note" 
-                                        className="w-full h-auto object-cover grayscale sepia contrast-125"
-                                        onError={(e) => {
-                                            (e.target as HTMLImageElement).src = 'https://placehold.co/600x200/e8e4db/57534e?text=Original+Handwritten+Note';
-                                        }}
-                                    />
+                                    <div className="relative">
+                                        <img 
+                                            src={activeGalleryImage ?? undefined}
+                                            alt="Handwritten Logbook Note" 
+                                            className="w-full h-auto object-cover grayscale sepia contrast-125 cursor-zoom-in"
+                                            onError={(e) => {
+                                                (e.target as HTMLImageElement).src = 'https://placehold.co/600x200/e8e4db/57534e?text=Original+Handwritten+Note';
+                                            }}
+                                            onClick={() => activeGalleryImage && setFullscreenImage(activeGalleryImage)}
+                                        />
+                                        {galleryLength > 1 && (
+                                            <div className="absolute inset-0 flex items-center justify-between px-2 text-[10px] uppercase tracking-[0.3em] text-stone-600 pointer-events-none">
+                                                <span className="pointer-events-auto cursor-pointer bg-white/70 px-2 py-1 rounded-full text-stone-800" onClick={goToPreviousImage}>Prev</span>
+                                                <span className="pointer-events-auto cursor-pointer bg-white/70 px-2 py-1 rounded-full text-stone-800" onClick={goToNextImage}>Next</span>
+                                            </div>
+                                        )}
+                                    </div>
+                                    <div className="mt-2 flex items-center justify-between text-[10px] uppercase tracking-[0.3em] text-stone-600">
+                                        <span>Image {galleryPosition + 1}</span>
+                                        <span>{galleryLength} total</span>
+                                    </div>
                                 </div>
                             )}
 
@@ -178,6 +214,36 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                 </div>
              </div>
         </div>
+        {fullscreenImage && (
+            <div
+                className="fixed inset-0 z-40 flex items-center justify-center bg-black/80 p-4"
+                role="dialog"
+                aria-modal="true"
+                onClick={() => setFullscreenImage(null)}
+            >
+                <div
+                    className="relative max-h-full max-w-full"
+                    onClick={(e) => e.stopPropagation()}
+                >
+                    <button
+                        type="button"
+                        aria-label="Close fullscreen view"
+                        className="absolute -top-3 -right-3 rounded-full bg-white/90 px-3 py-1 text-xs font-bold uppercase tracking-wide text-stone-800 shadow"
+                        onClick={(e) => {
+                            e.stopPropagation();
+                            setFullscreenImage(null);
+                        }}
+                    >
+                        Close
+                    </button>
+                    <img
+                        src={fullscreenImage}
+                        alt="Handwritten logbook detail"
+                        className="max-w-[90vw] max-h-[90vh] object-contain rounded-md shadow-lg border border-white"
+                    />
+                </div>
+            </div>
+        )}
     </div>
   );
 };

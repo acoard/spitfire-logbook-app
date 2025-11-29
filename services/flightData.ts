@@ -25,6 +25,8 @@ const LOCATIONS = {
   MANTON: { lat: 53.528, lng: -0.598, name: "Manton" }
 };
 
+const BASE_ASSET_URL = import.meta.env.BASE_URL;
+
 export const AIRCRAFT_SPECS: Record<string, { name: string, role: string, maxSpeed: string, range: string, description: string }> = {
   'Master II': {
     name: "Miles Master II",
@@ -146,7 +148,10 @@ export const FLIGHT_LOG: LogEntry[] = [
         destination: LOCATIONS.NORMANDY_BEACH,
         isSignificant: true,
         historicalNote: "D-Day: Operation Overlord. 313 Squadron provided air cover for the invasion fleet. 'Invasion flight' implies direct support of the landings.",
-        handwrittenNoteImg: `${import.meta.env.BASE_URL}dday-note.png`, // Placeholder - User to replace with actual asset path
+        handwrittenNoteImgs: [
+            `${BASE_ASSET_URL}dday-note.png`,
+            `${BASE_ASSET_URL}dday-full.jpg`
+        ],
         handwrittenNoteTranscription: "At our very detailed and comprehensive 'briefing' on the evening before the invasion - we were told that the outcome of the War required the armies to get safely ashore at all costs. And - as far as the 2nd Tactical Air Force was concerned there were enough pilots and aircraft in reserve for all squadrons to suffer 90% casualties on the first day - and they'd be fully up to strength and operational in pilots and planes on Day 2."
     },
     {
