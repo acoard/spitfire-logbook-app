@@ -41,30 +41,29 @@ const LogbookPanel: React.FC<LogbookPanelProps> = ({
       <div className="absolute inset-0 pointer-events-none opacity-50 bg-[url('https://www.transparenttextures.com/patterns/aged-paper.png')] z-0"></div>
 
       {/* Header / Binding */}
-      <div className="p-4 bg-stone-800 text-stone-200 shadow-md sticky top-0 z-20 border-b-4 border-stone-900">
-        <div className="flex items-start justify-between mb-2">
+      <div className="px-4 py-3 bg-stone-800 text-stone-200 shadow-md sticky top-0 z-20 border-b-4 border-stone-900">
+        <div className="flex items-end justify-between mb-2">
             <div>
-                <h2 className="text-2xl font-typewriter tracking-widest text-amber-500 uppercase">
+                <h2 className="text-2xl font-typewriter tracking-widest text-amber-500 uppercase leading-none">
                 RAF Flight Book
                 </h2>
-                <p className="text-xs font-mono text-stone-400">PILOT'S FLYING LOG BOOK</p>
+                <p className="text-[10px] font-typewriter text-stone-500 mt-1 opacity-80">313 Czech Squadron</p>
             </div>
             
-            <div className="flex flex-col items-end">
-                <div className="text-xl font-handwriting text-stone-100 mb-1">Robin Glen</div>
+            <div className="flex items-center gap-4 mb-0.5">
+                <div className="text-xl font-handwriting text-stone-100">Robin Glen</div>
                 <button 
                     onClick={onOpenProfile}
-                    className="flex items-center gap-2 bg-stone-700 hover:bg-stone-600 border border-stone-600 hover:border-amber-600/50 text-amber-500 hover:text-amber-400 px-3 py-1.5 rounded-sm transition-all shadow-sm group"
+                    className="flex items-center gap-2 bg-stone-700 hover:bg-stone-600 border border-stone-600 hover:border-amber-600/50 text-amber-500 hover:text-amber-400 px-2 py-1 rounded-sm transition-all shadow-sm group"
                 >
-                    <UserCircle className="w-4 h-4 group-hover:scale-105 transition-transform" />
-                    <span className="font-typewriter text-[10px] uppercase tracking-widest font-bold">View Service Record</span>
+                    <UserCircle className="w-3 h-3 group-hover:scale-105 transition-transform" />
+                    <span className="font-typewriter text-[9px] uppercase tracking-widest font-bold">View Service Record</span>
                 </button>
-                <p className="text-[10px] font-typewriter text-stone-500 mt-1.5 opacity-80">313 Czech Squadron</p>
             </div>
         </div>
         
         {/* Simple Phase Tabs */}
-        <div className="flex flex-col gap-2 mt-3 border-t border-stone-700 pt-3">
+        <div className="flex items-center justify-between mt-2 border-t border-stone-700 pt-2">
           <div className="flex gap-1">
             <button
                 onClick={() => setFilterPhase('ALL')}
@@ -93,9 +92,9 @@ const LogbookPanel: React.FC<LogbookPanelProps> = ({
                 id="sigOnly" 
                 checked={showSignificantOnly} 
                 onChange={(e) => setShowSignificantOnly(e.target.checked)}
-                className="w-4 h-4 accent-amber-600 bg-stone-700 border-stone-600 rounded focus:ring-amber-500 focus:ring-1"
+                className="w-3.5 h-3.5 accent-amber-600 bg-stone-700 border-stone-600 rounded focus:ring-amber-500 focus:ring-1"
               />
-              <label htmlFor="sigOnly" className="text-xs font-typewriter text-stone-400 uppercase tracking-wider cursor-pointer hover:text-stone-200">
+              <label htmlFor="sigOnly" className="text-[10px] font-typewriter text-stone-400 uppercase tracking-wider cursor-pointer hover:text-stone-200">
                 Exclude Routine Operations
               </label>
           </div>
