@@ -4,6 +4,7 @@ import { LogEntry } from '../types';
 import { AIRCRAFT_SPECS } from '../services/flightData';
 import { FolderOpen, Plane, FileText, ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from 'lucide-react';
 import ImageModal from './ImageModal';
+import StickyNote from './StickyNote';
 
 interface ContextPanelProps {
   selectedEntry: LogEntry | null;
@@ -12,14 +13,12 @@ type Tab = 'MISSION' | 'AIRCRAFT';
 
 const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
   const [activeTab, setActiveTab] = useState<Tab>('MISSION');
-  const [showBriefText, setShowBriefText] = useState(true);
   const [galleryIndex, setGalleryIndex] = useState(0);
   const [fullscreenImage, setFullscreenImage] = useState<string | null>(null);
   const contentRef = useRef<HTMLDivElement>(null);
 
   // Reset transcription view when entry changes
   useEffect(() => {
-    setShowBriefText(false);
     setGalleryIndex(0);
     setFullscreenImage(null);
   }, [selectedEntry?.id]);
@@ -179,25 +178,10 @@ const ContextPanel: React.FC<ContextPanelProps> = ({ selectedEntry }) => {
                             )}
 
                             {hasSlideText && (
-                                <div className="flex flex-col">
-                                    <button 
-                                        onClick={() => setShowBriefText(!showBriefText)}
-                                        className="self-start text-[10px] font-typewriter uppercase tracking-widest text-stone-500 hover:text-amber-600 flex items-center gap-1 transition-colors focus:outline-none mb-2"
-                                    >
-                                        {showBriefText ? (
-                                            <>Hide Text <ChevronUp className="w-3 h-3" /></>
-                                        ) : (
-                                            <>View Text <ChevronDown className="w-3 h-3" /></>
-                                        )}
-                                    </button>
-                                    
-                                    <div 
-                                        className={`overflow-hidden transition-all duration-500 ease-in-out ${showBriefText ? 'opacity-100 max-h-96' : 'opacity-0 max-h-0'}`}
-                                    >
-                                        <div className="bg-stone-100 p-3 border-l-2 border-amber-500 font-handwriting text-lg text-stone-700 leading-snug italic">
-                                            <div dangerouslySetInnerHTML={{ __html: activeSlideText }} />
-                                        </div>
-                                    </div>
+                                <div className="mt-4">
+                                    <StickyNote className="w-full max-w-none transform rotate-1">
+                                        <div dangerouslySetInnerHTML={{ __html: activeSlideText }} />
+                                    </StickyNote>
                                 </div>
                             )}
                          </div>
