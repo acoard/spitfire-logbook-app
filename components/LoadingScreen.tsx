@@ -77,8 +77,20 @@ const LoadingScreen: React.FC<LoadingScreenProps> = ({ isLoaded, onEnter }) => {
             </div>
           </div>
 
+          {/* Construction Disclaimer */}
+          <div className="mt-8 mb-0 text-center relative z-10">
+            <div className="inline-block border border-dashed border-stone-400 p-1 px-3 bg-[#e8e4d9] transform -rotate-1 shadow-sm">
+                <p className="font-typewriter text-[10px] text-red-900/70 uppercase tracking-wider font-bold">
+                    ⚠ Notice: Under Active Construction • New Content Incoming
+                </p>
+            </div>
+          </div>
+
+
+
+
           {/* Bottom Section: Loading vs Button */}
-          <div className="mt-8 flex flex-col items-center justify-center h-32">
+          <div className="mt-2 flex flex-col items-center justify-center h-32">
             {!isLoaded ? (
              <>
                 <div className="relative w-24 h-24 flex items-center justify-center scale-75">
