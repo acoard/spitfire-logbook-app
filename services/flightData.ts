@@ -153,7 +153,7 @@ export const FLIGHT_LOG: LogEntry[] = [
                 `${BASE_ASSET_URL}dday-note.png`,
                 `${BASE_ASSET_URL}dday-full.jpg`
             ],
-            text: "At our very detailed and comprehensive 'briefing' on the evening before the invasion - we were told that the outcome of the War required the armies to get safely ashore at all costs. And - as far as the 2nd Tactical Air Force was concerned there were enough pilots and aircraft in reserve for all squadrons to suffer 90% casualties on the first day - and they'd be fully up to strength and operational in pilots and planes on Day 2."
+            text: "Robin's flight notes for the day of D-Day: At our very detailed and comprehensive 'briefing' on the evening before the invasion - we were told that the outcome of the War required the armies to get safely ashore at all costs. And - as far as the 2nd Tactical Air Force was concerned there were enough pilots and aircraft in reserve for all squadrons to suffer 90% casualties on the first day - and they'd be fully up to strength and operational in pilots and planes on Day 2."
         },
     },
     {
