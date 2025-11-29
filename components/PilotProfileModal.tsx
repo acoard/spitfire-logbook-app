@@ -49,7 +49,7 @@ const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }
             </p>
 
             <div className="bg-stone-200/50 p-3 mb-4 border-l-4 border-stone-400 italic text-xs">
-              <span className="font-bold not-italic">Note on Origins:</span> Records indicate birth in Cape Town, S. Africa (Sept 1, 1935). This date conflicts with wartime service timelines (Wings achieved Dec 1941).
+              <span className="font-bold not-italic">Note:</span> This section is a work in progress—verification of details ongoing.
             </div>
 
             <p>
@@ -93,6 +93,15 @@ const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }
                    <h4 className="font-typewriter font-bold text-lg text-stone-900">Czechoslovak Military Cross</h4>
                    <p className="font-old-print text-sm text-stone-700 mt-1">
                      Awarded for "active fighting against the enemy." Highlighted in correspondence as the highest Czech decoration for operational service.
+                     <a 
+                        href="https://en.wikipedia.org/wiki/Czechoslovak_Military_Cross_1939" 
+                        target="_blank" 
+                        rel="noopener noreferrer" 
+                        className="underline text-blue-700 hover:text-blue-900 ml-1 font-mono text-xs align-baseline"
+                     >
+                        (<ExternalLink className="w-3 h-3 inline-block" /> wiki)
+                     </a>
+
                    </p>
                 </div>
              </div>
