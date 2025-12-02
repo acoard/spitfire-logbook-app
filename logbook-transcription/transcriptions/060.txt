@@ -1,7 +1,7 @@
 # FILENAME: 060.jpg
 
 # DATE
-March 1944
+March April 1944
 
 # AIRPORT
 Tealing
@@ -18,28 +18,33 @@ None
 # LOGBOOK ENTRIES
 | Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
 |---|---|---|---|---|---|---|
-| March | 9 | Master II | AZ 309 w/o Lawson | self | Check for Solo | .20 |
-| " | 10 | Spitfire I | X 4674 S.E.P. | " | Familiarisation | 1.15 |
-| " | 11 | " | P.R 219 | " | Aerobatics | 1.10 |
-| " | 14 | " | " | " | Sector Recon | 1.30 |
-| " | 16 | " | X 4068 | " | Formation | 1.05 |
-| " | 18 | " | N. 3265 | " | " | 1.15 |
-| " | 24 | " | R. 6837 | " | Aerobatics | .45 |
-| " | 30 | " | P.R 223 | " | Formation | 1.30 |
-| April | 5 | Hurricane II | BM 885 | " | 1st Solo on type | 1.50 |
-| " | 5 | " | JS 330 | " | Formation | 1.20 |
-| " | 10 | " | HV 882 | " | Bombing | 1.40 |
-| " | 11 | " | " | " | Aerobatics & Cross Country & A/G Firing | 2.00 |
-| " | 12 | " | BE 394 | " | Low level Cross Country, Bombing & A/G Firing | 2.00 |
-| " | 23 | " | HV 506 | " | Practice Dive Bombing | 2.05 |
-| " | 25 | " | " | " | Formation | 1.20 |
+| March | 9 | Master II | AZ 309 | self | Check for Solo | 0.20 |
+| March | 10 | Spitfire I | X 464 | self | Familiarisation | 1.15 |
+| March | " | " | R 219 | self | Aerobatics | 1.10 |
+| March | 11 | " | " | self | Sector Recce | 1.30 |
+| March | " | " | " | self | Formation | 1.30 |
+| March | 14 | " | X 4068 | self | " | 1.05 |
+| March | 16 | " | N 3265 | self | " | 1.15 |
+| March | 18 | " | R 6837 | self | " | 0.45 |
+| March | 24 | " | " | self | Aerobatics | 1.30 |
+| March | " | " | " | self | Formation | 1.20 |
+| March | 29 | " | R 223 | self | " | 1.50 |
+| March | 30 | " | " | self | " | 1.20 |
+| April | 5 | Hurricane II | BM 885 | self | 1st Solo on Type | 1.40 |
+| April | " | " | JS 330 | self | Formation | 2.00 |
+| April | 10 | " | HV 882 | self | Bombing | 2.00 |
+| April | " | " | " | self | " & Air/Ground Firing | 2.05 |
+| April | 11 | " | HV 556 | self | Aerobatics & Cross Country | 1.20 |
+| April | 12 | " | BE 394 | self | Low level Cross Country, Bombing & A/G Firing | 1.40 |
+| April | 23 | " | HV 506 | self | Practice Dive Bombing | 1.20 |
+| April | 25 | " | " | self | Formation | 1.40 |
 
 # TOTALS MONTH
 - Day Pilot: 24.75
 - Night Pilot: None
 
 # GRAND TOTAL
-356.35
+356.25
 
 # NOTES
 None
@@ -48,22 +53,16 @@ None
 None
 
 # OTHER
-- Bottom left summary:
-    - Unit: 1 TEU
-    - Aircraft Types: Master II, Spitfire I & V, Hurricane
-    - Time:
-        - Master II: .20
-        - Spitfire I & V: 11.20
-        - Hurricane: 13.55
-- Bottom left, next to "DATE": Signature: P.A. Clem
-- Bottom right, next to "Totals Carried Forward":
-    - Day Dual: 90.20
-    - Day Pilot: 251.45
-    - Night Dual: 9.50
-    - Night Pilot: 4.40
+- Bottom left page, summary box: Summary for I TEU Tealing
+  - Unit: I TEU
+  - Aircraft Types: Master II, Spitfire I & V, Hurricane
+  - Date:
+  - Signature: R.A. Glen
+- Bottom right page, totals carried forward: Totals Carried Forward 90.20 251.45 9.50 4.40 20.0
 
 # HUMAN COMMENTS
 - This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
-- The "Totals Month" Day Pilot value (24.75) is derived by summing the "Time" values for Spitfire I & V (11.20) and Hurricane (13.55) from the summary block at the bottom of the page.
-- There is a discrepancy between the calculated 'Day Pilot' total (Previous + Month = 226.30 + 24.75 = 251.05) and the 'Totals Carried Forward' Day Pilot value (251.45). The carried forward value is 40 minutes higher.
-- The signature "P.A. Clem" is a best guess; the last name is somewhat difficult to discern.
+- TO REVIEWER: There is a discrepancy between the sum of the logbook entries' Pilot times for the month (26.55 hours) and the "TOTALS MONTH - Day Pilot" value taken from the handwritten summary box (24.75 hours).
+- TO REVIEWER: There is also a discrepancy between `TOTALS PREVIOUS (Day Pilot) + TOTALS MONTH (Day Pilot)` (226.30 + 24.75 = 251.05) and the "Totals Carried Forward" value for Day Pilot (251.45) found at the bottom of the page. The "Totals Carried Forward" appears to be the most accurate cumulative value.
+- TO REVIEWER: The "Aircraft Type" in the summary box lists "Spitfire I & V", but only "Spitfire I" appears in the logbook entries. The summary box entry has been transcribed as written.
+--------------------------------

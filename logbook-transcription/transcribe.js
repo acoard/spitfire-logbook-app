@@ -97,7 +97,11 @@ Transcribe everything exactly as written, do not correct any spelling or grammar
 If something is illegible, write "[illegible]" in the field or portion of the text.
 Do not add conversational text. Only output the Markdown.
 Use standard markdown formatting for lists and tables.
-Ensure all table rows have the same number of columns.`;
+Ensure all table rows have the same number of columns.
+
+COMMON TRANSCRIPTION ERRORS:
+- "Fir Test" should be "Air Test"
+- "P.A Clem" should be "R.A. Glen" (the pilot is Robin Glen)`;
 
     const response = await ai.models.generateContent({
       model: "gemini-2.5-flash",
