@@ -1,20 +1,69 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# The Pilot's Journey: Spitfire Logbook
 
-# Run and deploy your AI Studio app
+An immersive React application that brings a World War II RAF pilot's logbook to life. This project combines historical data with modern web technologies to create an interactive experience, featuring flight tracking, statistical analysis, and AI-generated historical context.
 
-This contains everything you need to run your app locally.
+## 🚀 Features
 
-View your app in AI Studio: https://ai.studio/apps/drive/1UuMhpV2UM9J760RNZbjmTPRkuSA2E5I7
+- **Digital Logbook Interface**: Browse through detailed flight records, including dates, aircraft types, flight times, and pilot remarks.
+- **Interactive Flight Map**: Visualize flight paths, origins, and destinations on an interactive map using Leaflet.
+- **Mission Statistics**: View comprehensive breakdowns of flight hours, aircraft usage, and duty types with interactive charts.
+- **AI-Powered Historical Context**: Integrated with Google's Gemini AI (Flash model) to provide educational historical context and expert insights for each specific logbook entry, acting as a virtual aviation historian.
+- **Pilot Profile & Gallery**: Explore the pilot's service record and view historical photographs from the era.
+- **Responsive Design**: Built with Tailwind CSS for a seamless experience across devices.
 
-## Run Locally
+## 🛠️ Tech Stack
 
-**Prerequisites:**  Node.js
+- **Framework**: React 19 with TypeScript
+- **Build Tool**: Vite
+- **Styling**: Tailwind CSS 4
+- **Mapping**: Leaflet / React-Leaflet
+- **Data Visualization**: Recharts
+- **AI Integration**: Google GenAI SDK (Gemini 2.0 Flash)
+- **Routing**: React Router DOM
 
+## 🏁 Getting Started
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+### Prerequisites
+- Node.js (Latest LTS recommended)
+- A Google Gemini API Key
+
+### Installation
+
+1. **Clone the repository** (or download source)
+   ```bash
+   git clone <repository-url>
+   cd spitfire-logbook-app
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Configure Environment Variables**
+   Create a `.env.local` file in the root directory and add your Gemini API key:
+   ```env
+   GEMINI_API_KEY=your_api_key_here
+   ```
+   *(Note: The application is configured to map `GEMINI_API_KEY` to the internal usage in `vite.config.ts`)*
+
+4. **Run the Application**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:5173](http://localhost:5173) to view it in your browser.
+
+## 📁 Project Structure
+
+- `components/`: React components for various UI elements (LogbookPanel, MapPanel, StatsPanel, etc.)
+- `services/`: Logic for data handling and AI integration (`flightData.ts`, `aiService.ts`).
+- `types.ts`: TypeScript definitions for log entries and data structures.
+- `App.tsx`: Main application layout and routing logic.
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+## 📄 License
+
+This project is open source.

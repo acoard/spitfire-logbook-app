@@ -94,7 +94,7 @@ const PilotProfileModal: React.FC<PilotProfileModalProps> = ({ isOpen, onClose }
                    <p className="font-old-print text-sm text-stone-700 mt-1">
                      Awarded for "active fighting against the enemy." Highlighted in correspondence as the highest Czech decoration for operational service.
                      <a 
-                        href="https://en.wikipedia.org/wiki/Czechoslovak_Military_Cross_1939" 
+                        href="https://en.wikipedia.org/wiki/Czechoslovak_War_Cross_1939" 
                         target="_blank" 
                         rel="noopener noreferrer" 
                         className="underline text-blue-700 hover:text-blue-900 ml-1 font-mono text-xs align-baseline"
