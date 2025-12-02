@@ -37,10 +37,11 @@ Follow this exact template structure. Do not deviate.
 - Night Pilot: [Value]
 
 # LOGBOOK ENTRIES
-| Date | Aircraft Type | No. | Pilot | Duty | Time |
-|---|---|---|---|---|---|
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
 [Logbook rows here. Use " for ditto marks if present in original.]
-[Pilot will be "self" for all flights.]
+[Pilot will be "self" or ditto mark for all flights, transcribe as such.]
+[Duty should be written with normal capitalization, not ALLCAPS.]
 
 # TOTALS MONTH
 - Day Pilot: [Value]
@@ -50,8 +51,10 @@ Follow this exact template structure. Do not deviate.
 [Value]
 
 # NOTES
-- [Note location 1: Note content 1]
-- [Note location 2: Note content 2]
+- [Note location 1 on page (Relevant date or row number if relevant to note) Note content 1]
+example: - Bottom right page next to "Convoy Patrol" (June 10th): lorem ipsum....
+example: - Middle left: lorem ipsum...
+[Only write the date if the note seems to be relevant to that date, otherwise just write the page location.]
 
 # PHOTOS
 - [Photo location: Photo description.]

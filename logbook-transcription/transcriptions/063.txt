@@ -16,19 +16,19 @@ Tangmere
 - Night Pilot: 5.20
 
 # LOGBOOK ENTRIES
-| Date | Aircraft Type | No. | Pilot | Duty | Time |
-|---|---|---|---|---|---|
-| June 22 | Spitfire IX | R | S/P | Beach Head Patrol | 2.15 |
-| " | " | " | " | Convoy Patrol | 1.55 |
-| 23 | " | " | " | Beach Head Patrol | 2.05 |
-| " | " | " | " | " | 2.05 |
-| 24 | " | " | " | Air Test | .30 |
-| " | " | Z | " | Base - B.10. A.L.G in France | .45 |
-| " | " | " | " | Armed Reco | 1.00 |
-| " | " | " | " | Convoy Patrol | 1.20 |
-| 28 | " | " | " | Front Line Patrol | 1.05 |
-| " | " | " | " | " | 1.10 |
-| 29 | " | " | " | B.10., A.L.G in France - Base | .35 |
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| June | 22 | Spitfire IX | R | self | Beach Head Patrol | 2.15 |
+| " | 23 | " | " | " | Convoy Patrol | 1.55 |
+| " | " | " | " | " | Beach Head Patrol | 2.05 |
+| " | 24 | " | " | " | " | 2.05 |
+| " | " | " | " | " | Air Test | 0.30 |
+| " | " | " | Z | " | Base - B.10. ALG in France | 0.45 |
+| " | " | " | " | " | Armed Recco | 1.00 |
+| " | " | " | " | " | Convoy Patrol | 1.20 |
+| " | 29 | " | " | " | Front Line Patrol | 1.05 |
+| " | " | " | " | " | " | 1.10 |
+| " | " | " | " | " | B.10. ALG in France - Base | 0.35 |
 
 # TOTALS MONTH
 - Day Pilot: 51.15
@@ -38,13 +38,14 @@ Tangmere
 426.00
 
 # NOTES
-- The first of 2 nights just behind the Front Line - under [illegible].
-- Got shot up – my plane's tailplane sustaining Ack Ack damage.
-- Back to B.10. - it was after we landed back from France - that we had some PR photography taken of our picture around the C.O.'s plane. (See Photos in "Memorabilia Album")
+- Right side next to June 22nd-24th flights: The first of 2 nights just behind the Front Line - under [illegible].
+- Right side next to June 28th flights: Got shot up - my plane's tailplane sustaining Ack Ack damage.
+- Right side next to June 29th flights: Back to B.10. - it was after we landed back in France - that we had some P.R. photographs taken of our picture armed the C.O's plane. (See Photos in Memorabilia Album)
 
 # PHOTOS
-- Photos in "Memorabilia Album" (of PR photography around C.O.'s plane)
+- Right side next to June 29th note: Reference to "Photos in Memorabilia Album" of pilot and C.O's plane after landing back in France.
 
 # OTHER
-- R Wood F/Lt. O.C. 'B' Flt.
-- H. O. Chisholm S/LDR O.C. 313 Sqdn.
+- Summary section: Unit 313 Sqdn, Date 30.6.44, Signature R.A. Grea
+- Right side below June 29th notes: Muoad F/Lt. O.C. 'B' Flt.
+- Right side below Muoad signature: M. F. [illegible] S/LDR O.C. 313 Sqdn.
