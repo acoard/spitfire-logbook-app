@@ -289,7 +289,7 @@ const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
           style={{
             flexBasis: `${logbookHeightRatio * 100}%`,
             minHeight: '240px',
-            transition: 'flex-basis 250ms ease'
+            transition: isDraggingStack ? 'none' : 'flex-basis 250ms ease'
           }}
         >
           <LogbookPanel
@@ -324,7 +324,7 @@ const WorkspaceLayout: React.FC<WorkspaceLayoutProps> = ({
           style={{
             flexBasis: `${(1 - logbookHeightRatio) * 100}%`,
             minHeight: '200px',
-            transition: 'flex-basis 250ms ease'
+            transition: isDraggingStack ? 'none' : 'flex-basis 250ms ease'
           }}
         >
           <ContextPanel selectedEntry={selectedEntry} />

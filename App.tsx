@@ -19,7 +19,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <Router>
+    <Router basename={import.meta.env.BASE_URL}>
       <div className="flex flex-col h-screen w-screen overflow-hidden bg-stone-900 font-sans">
         {!hasEntered && <LoadingScreen isLoaded={!isAssetsLoading} onEnter={() => setHasEntered(true)} />}
         
