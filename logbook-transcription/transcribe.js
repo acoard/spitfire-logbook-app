@@ -51,23 +51,25 @@ Follow this exact template structure. Do not deviate.
 [Value]
 
 # NOTES
-- [Note location 1 on page (Relevant date or row number if relevant to note) Note content 1]
+- [Location on page]: [Content]
 example: - Bottom right page next to "Convoy Patrol" (June 10th): lorem ipsum....
-example: - Middle left: lorem ipsum...
 [Only write the date if the note seems to be relevant to that date, otherwise just write the page location.]
 
 # PHOTOS
-- [Photo location: Photo description.]
+- [Location]: [Description]
+[First include actual photos and their description, afterwards can include any text references to photos]
 
 # OTHER
 - [Signatures, stamps, assessments, etc]
 
 If a section is empty or not present, write "None".
 Do not write in allcaps, use normal capitalization.
-For flight hours, use decimal points instead of dashes when transcribing.
+For flight hours, use decimal points instead of dashes when transcribing (e.g. 1.15 not 1:15 or 1-15).
 Transcribe everything exactly as written, do not correct any spelling or grammar.
 If something is illegible, write "[illegible]" in the field or portion of the text.
-Do not add conversational text. Only output the Markdown.`
+Do not add conversational text. Only output the Markdown.
+Use standard markdown formatting for lists and tables.
+Ensure all table rows have the same number of columns.`
             },
             {
               inlineData: {
