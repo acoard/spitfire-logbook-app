@@ -40,6 +40,7 @@ Follow this exact template structure. Do not deviate.
 | Date | Aircraft Type | No. | Pilot | Duty | Time |
 |---|---|---|---|---|---|
 [Logbook rows here. Use " for ditto marks if present in original.]
+[Pilot will be "self" for all flights.]
 
 # TOTALS MONTH
 - Day Pilot: [Value]
@@ -49,16 +50,20 @@ Follow this exact template structure. Do not deviate.
 [Value]
 
 # NOTES
-- [Note line 1]
-- [Note line 2]
+- [Note location 1: Note content 1]
+- [Note location 2: Note content 2]
 
 # PHOTOS
-- [Photo descriptions]
+- [Photo location: Photo description.]
 
 # OTHER
-- [Signatures, etc]
+- [Signatures, stamps, assessments, etc]
 
 If a section is empty or not present, write "None".
+Do not write in allcaps, use normal capitalization.
+For flight hours, use decimal points instead of dashes when transcribing.
+Transcribe everything exactly as written, do not correct any spelling or grammar.
+If something is illegible, write "[illegible]" in the field or portion of the text.
 Do not add conversational text. Only output the Markdown.`
             },
             {

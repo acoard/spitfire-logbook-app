@@ -4,10 +4,10 @@
 June 1944
 
 # AIRPORT
-TANGMERE
+Tangmere
 
 # SQUADRON
-313 SQUADRON
+313 Squadron
 
 # TOTALS PREVIOUS
 - Day Dual: 90.20
@@ -18,39 +18,33 @@ TANGMERE
 # LOGBOOK ENTRIES
 | Date | Aircraft Type | No. | Pilot | Duty | Time |
 |---|---|---|---|---|---|
-| 22 | Spitfire IX | R | S.F.P | BEACH HEAD PATROL | 2.15 |
-| 23 | " | " | " | CONVOY PATROL | 1.55 |
-| " | " | " | " | BEACH HEAD PATROL | 2.05 |
-| 24 | " | " | " | " | 2.05 |
-| " | " | " | " | Air Test | .30 |
-| 28 | " | Z | " | BASE - B.10. A.L.G IN FRANCE | .45 |
-| " | " | " | " | ARMED RECCO | 1.00 |
-| " | " | " | " | CONVOY PATROL | 1.20 |
-| 29 | " | " | " | FRONT LINE PATROL | 1.05 |
+| June 22 | Spitfire IX | R | S/P | Beach Head Patrol | 2.15 |
+| " | " | " | " | Convoy Patrol | 1.55 |
+| 23 | " | " | " | Beach Head Patrol | 2.05 |
+| " | " | " | " | " | 2.05 |
+| 24 | " | " | " | Air Test | .30 |
+| " | " | Z | " | Base - B.10. A.L.G in France | .45 |
+| " | " | " | " | Armed Reco | 1.00 |
+| " | " | " | " | Convoy Patrol | 1.20 |
+| 28 | " | " | " | Front Line Patrol | 1.05 |
 | " | " | " | " | " | 1.10 |
-| " | " | " | " | B.10. A.L.G IN FRANCE - BASE | .35 |
+| 29 | " | " | " | B.10., A.L.G in France - Base | .35 |
 
 # TOTALS MONTH
 - Day Pilot: 51.15
-- Night Pilot: .40
+- Night Pilot: 0.40
 
 # GRAND TOTAL
 426.00
 
 # NOTES
-- The first of 2 nights just behind the Front Line - under "Edifice".
-- Got shot up - my planes tailplane sustaining Ack Ack damage.
-- Back to B.10. A.L.G. - it was after we landed back from France - that we had some P.R. photographs taken of our picture and the C.O.'s plane. (See Photos in "Memorabilia Album")
+- The first of 2 nights just behind the Front Line - under [illegible].
+- Got shot up – my plane's tailplane sustaining Ack Ack damage.
+- Back to B.10. - it was after we landed back from France - that we had some PR photography taken of our picture around the C.O.'s plane. (See Photos in "Memorabilia Album")
 
 # PHOTOS
-- See Photos in "Memorabilia Album"
+- Photos in "Memorabilia Album" (of PR photography around C.O.'s plane)
 
 # OTHER
-- Signatures:
-    - I. wood F/Lt. O.C. 'B' Flt.
-    - H.W. Calog S/LDR O.C. 313 Sqdn.
-    - R.A. Gren (from summary table)
-- Summary for June 1944:
-    - Unit: 313 SQDN
-    - Date: 30. 6. 44.
-    - Aircraft Type Summary: SPITFIRE IX
+- R Wood F/Lt. O.C. 'B' Flt.
+- H. O. Chisholm S/LDR O.C. 313 Sqdn.
