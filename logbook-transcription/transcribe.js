@@ -92,7 +92,7 @@ example: - Bottom right page next to "Convoy Patrol" (June 10th): lorem ipsum...
 
 If a section is empty or not present, write "None".
 Do not write in allcaps, use normal capitalization.
-For flight hours, use decimal points instead of dashes when transcribing (e.g. 1.15 not 1:15 or 1-15).
+For flight hours, use decimal points instead of dashes when transcribing (e.g. 1.15 not 1:15 or 1-15). Do NOT modify what's written (i.e do NOT convert 7-30 to 7.5). Write it as written, just assume every dash is a period.
 Transcribe everything exactly as written, do not correct any spelling or grammar.
 If something is illegible, write "[illegible]" in the field or portion of the text.
 Do not add conversational text. Only output the Markdown.

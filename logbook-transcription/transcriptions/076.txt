@@ -1,0 +1,53 @@
+# FILENAME: 076.jpg
+
+# DATE
+July 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+202 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: 0.00
+- Day Pilot: 0.00
+- Night Dual: 0.00
+- Night Pilot: 0.00
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+None
+
+# TOTALS MONTH
+- Day Pilot: 8.55
+- Night Pilot: 0.00
+
+# GRAND TOTAL
+None
+
+# NOTES
+- Right side of page, in blue box, under 'Duty' column: SUMMARY FOR July 1945 UNIT 202 SP DATE 31.7.45 SIGNATURE R.A. Glen
+- Right side of page, next to 'UNIT 202 SP' in blue box: TYPES
+- Aircraft Type column, on summary line: SKAYFOR.
+- Pilot, or 1st Pilot column, on summary line: F/L D. C. Ferry
+- 2nd Pilot, Pupil or Passenger column, on summary line: 202 S. P.
+- Single-Engine Aircraft Day Pilot column, on summary line: .15
+- Multi-Engine Aircraft Day 1st Pilot column, on summary line: 8.40
+- Passenger column, on summary line: 48.15
+
+# PHOTOS
+None
+
+# OTHER
+- Top of Duty column: Totals Brought Forward
+- Bottom of Duty column: Totals Carried Forward
+- Bottom left of page: GRAND TOTAL [Cols (1) to (10)] ........Hrs ........Mins
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The numerical entries 0.15, 8.40, and 48.15 are on a line explicitly marked as "SUMMARY FOR July 1945". They are treated as monthly totals for Day Pilot and Passenger categories.
+- TO REVIEWER: The "Aircraft Type", "Pilot", and "2nd Pilot" (here "202 S.P.") values are associated with this summary line and are therefore included in the 'NOTES' section rather than 'LOGBOOK ENTRIES'.
+- TO REVIEWER: "SKATFOR." was transcribed as "SKAYFOR." based on visual inspection.
+- TO REVIEWER: "R.A. Glen" signature was confirmed against common transcription errors.

@@ -1,10 +1,11 @@
 # FILENAME: 060.jpg
 
 # DATE
-March April 1944
+March 1944
+April 1944
 
 # AIRPORT
-Tealing
+I.T.E.U. TEALING
 
 # SQUADRON
 None
@@ -18,26 +19,23 @@ None
 # LOGBOOK ENTRIES
 | Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
 |---|---|---|---|---|---|---|
-| March | 9 | Master II | AZ 309 | self | Check for Solo | 0.20 |
-| March | 10 | Spitfire I | X 464 | self | Familiarisation | 1.15 |
-| March | " | " | R 219 | self | Aerobatics | 1.10 |
-| March | 11 | " | " | self | Sector Recce | 1.30 |
-| March | " | " | " | self | Formation | 1.30 |
-| March | 14 | " | X 4068 | self | " | 1.05 |
-| March | 16 | " | N 3265 | self | " | 1.15 |
-| March | 18 | " | R 6837 | self | " | 0.45 |
-| March | 24 | " | " | self | Aerobatics | 1.30 |
-| March | " | " | " | self | Formation | 1.20 |
-| March | 29 | " | R 223 | self | " | 1.50 |
-| March | 30 | " | " | self | " | 1.20 |
-| April | 5 | Hurricane II | BM 885 | self | 1st Solo on Type | 1.40 |
-| April | " | " | JS 330 | self | Formation | 2.00 |
-| April | 10 | " | HV 882 | self | Bombing | 2.00 |
-| April | " | " | " | self | " & Air/Ground Firing | 2.05 |
-| April | 11 | " | HV 556 | self | Aerobatics & Cross Country | 1.20 |
-| April | 12 | " | BE 394 | self | Low level Cross Country, Bombing & A/G Firing | 1.40 |
-| April | 23 | " | HV 506 | self | Practice Dive Bombing | 1.20 |
-| April | 25 | " | " | self | Formation | 1.40 |
+| March | 9 | Master II | AZ 309 | self | Check for Solo | .20 |
+| " | 10 | Spitfire I | X 4674 | " | Familiarisation | 1.15 |
+| " | 11 | " | FR 219 | " | Aerobatics | 1.10 |
+| " | 14 | " | " | " | Sector Recon | 1.30 |
+| " | 16 | " | X 4068 | " | Formation | 1.30 |
+| " | 18 | " | N. 3265 | " | Formation | 1.05 |
+| " | 24 | " | R. 6837 | " | Formation | 1.15 |
+| " | 29 | " | FR 223 | " | Aerobatics | -.45 |
+| " | 30 | " | " | " | Formation | 1.30 |
+| " | 30 | Ve | 504 | " | 1st Solo on type | 1.20 |
+| April | 5 | Hurricane II | BM 885 | " | Formation | 1.50 |
+| " | 5 | " | JS 330 | " | Bombing | 1.20 |
+| " | 10 | " | HV 882 | " | & Air/Ground Firing | 1.40 |
+| " | 11 | " | HV 556 | " | Aerobatics & Cross Country | 2.00 |
+| " | 12 | " | BE 394 | " | Low-level Cross Country Bombing & Air/G Firing | 2.00 |
+| " | 23 | " | HV 506 | " | Practice Dive Bombing | 2.05 |
+| " | 25 | " | " | " | Formation | 1.20 |
 
 # TOTALS MONTH
 - Day Pilot: 24.75
@@ -47,22 +45,19 @@ None
 356.25
 
 # NOTES
-None
+- Summary section:
+    - Unit: I TEU
+    - Aircraft Types: Master II, Spitfires I & V, Hurricane
 
 # PHOTOS
 None
 
 # OTHER
-- Bottom left page, summary box: Summary for I TEU Tealing
-  - Unit: I TEU
-  - Aircraft Types: Master II, Spitfire I & V, Hurricane
-  - Date:
-  - Signature: R.A. Glen
-- Bottom right page, totals carried forward: Totals Carried Forward 90.20 251.45 9.50 4.40 20.0
+- Signature: R.A. Glen
 
 # HUMAN COMMENTS
 - This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
-- TO REVIEWER: There is a discrepancy between the sum of the logbook entries' Pilot times for the month (26.55 hours) and the "TOTALS MONTH - Day Pilot" value taken from the handwritten summary box (24.75 hours).
-- TO REVIEWER: There is also a discrepancy between `TOTALS PREVIOUS (Day Pilot) + TOTALS MONTH (Day Pilot)` (226.30 + 24.75 = 251.05) and the "Totals Carried Forward" value for Day Pilot (251.45) found at the bottom of the page. The "Totals Carried Forward" appears to be the most accurate cumulative value.
-- TO REVIEWER: The "Aircraft Type" in the summary box lists "Spitfire I & V", but only "Spitfire I" appears in the logbook entries. The summary box entry has been transcribed as written.
---------------------------------
+- TO REVIEWER: There is a discrepancy between the calculated total Day Pilot time from individual log entries (24.65) and the explicitly summarized Day Pilot total (24.75) for the month in the 'Summary for I TEU Tealing' section. I have used the explicit summary total (24.75) as it is directly stated on the page for "Totals Month".
+- TO REVIEWER: There is a discrepancy between the sum of the "Totals Carried Forward" values (90.20 + 251.45 + 9.50 + 4.40 = 355.55) and the explicitly written "GRAND TOTAL [Cols. (1) to (10)] 356 Hrs. 25 Mins" (356.25). I have transcribed the explicitly written "GRAND TOTAL" as instructed.
+- TO REVIEWER: The April 10th entry's duty "& Air/Ground Firing" appears to be a continuation or clarification of the April 5th "Bombing" duty, but it's listed as a separate entry on a different date. I have transcribed it as written.
+- TO REVIEWER: The time entry for March 29th is "-.45". I have transcribed this exactly as written.

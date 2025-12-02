@@ -19,11 +19,11 @@ Lympne
 | Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
 |---|---|---|---|---|---|---|
 | July | 2 | Spitfire IX | U | self | Bomber Escort | 1.20 |
-| " | 2 | " | " | " | Lympne - Tangmere | 0.30 |
-| " | 4 | " | Z | " | Bomber Escort | 1.20 |
-| " | 6 | " | R | " | " | 1.25 |
-| " | 8 | " | W | " | Ranber | 1.25 |
-| " | 31 | " | F | " | Air Test | 0.05 |
+| " | 4 | " | Z | " | Lympne - Tangmere | .30 |
+| " | 6 | " | R | " | Bomber Escort | 1.20 |
+| " | 8 | " | W | " | " | 1.25 |
+| " | 31 | " | F | " | Ranber | 1.25 |
+| " | 31 | " | F | " | Air Test | .05 |
 
 # TOTALS MONTH
 - Day Pilot: 6.05
@@ -33,18 +33,21 @@ Lympne
 432.05
 
 # NOTES
-- Right page, next to the "1.20" time entry (July 2nd): The U.S.A.A.F. Bomber (heavy shower) flew over 2hrs in many daylight raids on Caen. The pattern bombing was devastating - so was the ack ack.
-- Right page, next to the "1.25" time entry and an asterisk (July 8th), referring to July 4th: Just one flight. (Pilot F/Lt. [illegible] Masaryk) We flew well into occupied France at about 15.000ft and dove down for a low level sweep in open formation. At one point we swept across an airfield and I wiped out the crew of an A.A. post scrambling to train their gun on the leading planes.
+- Right page, July 2nd: The V.1 A.A.F (German show) 700-800 per hour daylight-raids on Caen. The pattern bombing was devastating. So was the ack ack.
+- Right page, July 8th: Just one flight (low level sweep in N. France) We flew well into occupied France at about 15.000ft and flew low level sweep in open formation. At one point we swept across a airfield and I wiped out the crew of an A.A. port scrambling to train landing planes.
+- Mid-right page: Masaryk
+- Mid-right page below Masaryk: F/Lt OC B Fflight
+- Mid-right page below F/Lt OC B Fflight: Hochmalek 9/20 oc. 313 Sqdn.
+- Mid-right page below Hochmalek: Hochmal
 
 # PHOTOS
 None
 
 # OTHER
-- Bottom right of "SUMMARY FOR JULY 1944" box, under "SIGNATURE": D.A.Cren
-- Right page, below the note from July 4th:
-    - F/Lt
-    - Masaryk
-    - OC B Flight
-    - HOCHMAL, 9/7
-    - OC 313 Sqdn.
-    - Hochmal
+- Summary box signature: N.A. Glen
+- Summary box Aircraft Types: Spitfire V & II
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The capitalization for "Duty" entries was changed from ALL CAPS to normal capitalization as per instructions.
+- TO REVIEWER: The signature is transcribed as "N.A. Glen" as it appears, not "R.A. Glen" as it does not match the common error "P.A Clem".

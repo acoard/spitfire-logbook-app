@@ -4,7 +4,7 @@
 August 1944
 
 # AIRPORT
-Skeabrae, Orkneys; Sumburgh, Shetlands
+Skeabrae Orkneys
 
 # SQUADRON
 313 Squadron
@@ -18,42 +18,44 @@ Skeabrae, Orkneys; Sumburgh, Shetlands
 # LOGBOOK ENTRIES
 | Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
 |---|---|---|---|---|---|---|
-| August | 3 | Spitfire V | W | self | G C 1 | 0.25 |
-| " | " | " | " | " | Dusk Flying | 0.20 |
-| " | " | " | B | " | Ain test | 0.45 |
-| " | 4 | " | E | " | Dusk Patrol | 0.15 |
-| " | " | " | B | " | Formation | 0.25 |
-| " | 8 | " | X | " | Air Firing | 0.35 |
-| " | 9 | " | W | " | Skeabrae - Sumburgh | 0.35 |
-| " | " | " | " | " | " | 0.30 |
+| August | 3 | Spitfire V | W | self | G.C.I | .25 |
+| " | " | " | B | " | Dusk Flying | .20 |
+| " | " | " | E | " | Air Test | .45 |
+| " | 4 | " | B | " | Dusk Patrol | .15 |
+| " | " | " | " | " | Formation | .25 |
+| " | 8 | " | X | " | Air Firing | .35 |
+| " | 9 | " | W | " | Skeabrae - Sumburgh | .35 |
 | " | 14 | " | P | " | Affiliation with Sunderland | 1.05 |
-| " | 22 | " | V | " | Formation | 0.35 |
-| " | 24 | " | P | " | Sumburgh - Skeabrae | 0.30 |
+| " | 22 | " | V | " | Formation | .35 |
+| " | 24 | " | P | " | Sumburgh - Skeabrae | .30 |
 | " | 26 | " | Y | " | Dusk Patrol | 1.10 |
-| " | 27 | " | U | " | Dive Bombing | 1.00 |
-| " | 30 | " | X | " | Dusk Patrol | 1.15 |
-| " | " | " | Y | " | Dusk Patrol | 1.10 |
-| " | 31 | " | U | " | Dusk Patrol | 0.20 |
+| " | 28 | " | U | " | Dive Bombing | 1.00 |
+| " | " | " | X | " | Dusk Patrol | 1.10 |
+| " | 30 | " | Y | " | " | 1.10 |
+| " | 31 | " | U | " | " | .20 |
 
 # TOTALS MONTH
 - Day Pilot: 10.50
-- Night Pilot: None
+- Night Pilot: .20
 
 # GRAND TOTAL
-462.75
+462 Hrs 45 Mins
 
 # NOTES
-- Right page next to date 4 and 8: nothing done on the fleet - in Scapa Flow.
-- Bottom left page in summary box: UNIT 313 Squadron
-- Bottom left page in summary box: DATE 31.8.44.
-- Bottom left page in summary box: AIRCRAFT Spitfire V
-- Bottom right page next to "SUMMARY FOR August 1944": Masoak F/Lt.
-- Bottom right page next to "SUMMARY FOR August 1944": O.C. B. Flt.
-- Bottom right page below O.C. B. Flt.: Accumulator S/Ldr 8/44
+- Mid right page, in Multi-Engine Aircraft section: Looking down on the Fleet in Scapa Flow.
+- Bottom right page: Masouth F/Lt.
+- Bottom right page: R.A. Glen F/Lt.
+- Bottom right page: Accumulator S/Log
+- Bottom right page: 6.00 hrs.
 
 # PHOTOS
 None
 
 # OTHER
-- Signature in summary box: R.A. C[illegible]
-- Stamp: 313 Squadron
+- Summary box - UNIT: 313 Squadron
+- Summary box - DATE: 31.8.44.
+- Summary box - SIGNATURE: R.A. Glen
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The "Airport" field lists only "Skeabrae Orkneys", as it's at the very top. However, Sumburgh Shetlands is also mentioned as a base for a block of flights. The template only allows one airport name.

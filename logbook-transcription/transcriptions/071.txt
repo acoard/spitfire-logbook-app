@@ -1,0 +1,62 @@
+# FILENAME: 071.jpg
+
+# DATE
+March 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+313 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: 424.45
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| March | 1 | Spitfire IX | W | self | BOMBER ESCORT (Kamen) (Cologne) | 2.20 |
+| " | 2 | " | " | self | BOMBER ESCORT (Cologne) | 2.50 |
+| " | 2 | " | " | self | Ursel to Maldegem | .10 |
+| " | 2 | " | S | self | BOMBER ESCORT (Cologne) | 2.25 |
+| " | 14 | " | W | self | Formation. | 1.05 |
+| " | 15 | " | F | self | BOMBER ESCORT (Bochup) | 2.35 |
+| " | 16 | " | K | self | Ursel to Manston | .50 |
+| " | 17 | " | Y | self | Manston to Ursel | .50 |
+| " | 19 | " | " | self | BOMBER ESCORT (Güstenkirchen) | 2.45 |
+| " | 20 | " | R | self | Ursel to Maldegem | .45 |
+| " | 30 | " | P | self | Maldegem to Ursel | 2.00 |
+| " | 31 | " | R | self | Formation. | 2.30 |
+| " | 31 | " | " | self | Manston to Maldegem | 1.10 |
+| " | 31 | " | " | self | FIGHTER SWEEP (Cannabruch) | 2.35 |
+| " | 31 | " | " | self | Maldegem to Manston | .40 |
+
+# TOTALS MONTH
+- Day Pilot: 26.15
+- Night Pilot: None
+
+# GRAND TOTAL
+557.30
+
+# NOTES
+- Summary box: "SUMMARY FOR March 1945"
+- Summary box: "UNIT 313 Sądron"
+- Summary box: "DATE 31.3.45"
+- Summary box aircraft totals: "AIRCRAFT TYPES Spitfire IX Day 26.15 Night"
+- Summary box total all types: "Total All Types Day 558.00 Night 14.30"
+- Bottom right next to Grand Total: "Totals Carried Forward (1) 90.20 (2) 45.00 (3) 9.50 (4) 6.20"
+
+# PHOTOS
+- Right page: A black and white photograph of two individuals, one in a flight suit and goggles seated in what appears to be an aircraft cockpit, and another person standing outside, leaning in, possibly assisting.
+
+# OTHER
+- Summary box signature: R.A. Glen
+- Right page signature: mince PILOR oc. 313 Sęd
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The 'Totals Carried Forward' at the bottom right of the page represents the cumulative totals for Day Dual, Day Pilot, Night Dual, and Night Pilot, respectively, that are carried to the next page. This is distinct from the 'TOTALS PREVIOUS' section which is based on the 'Totals Brought Forward' line on *this* page and the value written at the top of the Day Pilot column (424.45).
+- TO REVIEWER: There is a discrepancy between the 'GRAND TOTAL' (557.30) and the 'Total All Types' (558.00 Day + 14.30 Night = 572.30) in the summary box. The explicit 'GRAND TOTAL' has been used.

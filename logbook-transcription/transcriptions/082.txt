@@ -1,0 +1,62 @@
+# FILENAME: 082.jpg
+
+# DATE
+January 1946
+
+# AIRPORT
+None
+
+# SQUADRON
+202 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: 0
+- Day Pilot: 556.30
+- Night Dual: 0
+- Night Pilot: 0
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| January | 2 | Spitfire XIV | SM925 | Self | Acceptance Test | .30 |
+| " | 3 | " | " | " | Karachi - Jodhpur | 1.30 |
+| " | 3 | " | " | " | Jodhpur - Nagpur | 2.00 |
+| " | 4 | " | " | " | Nagpur - Hakimpet | 1.05 |
+| " | 4 | " | " | " | Hakimpet - Yellahanka | 1.25 |
+| " | 7 | Dakota | " | " | Bangalore - Bombay | 3.20 |
+| " | 9 | " | " | " | Bombay - Karachi | 3.40 |
+| " | 23 | Spitfire XIV | SM891 | Self | Karachi - Baroda | 1.40 |
+| " | 24 | " | " | " | Baroda - Nagpur | 1.30 |
+| " | 25 | " | " | " | Nagpur - Hakimpet | 1.00 |
+| " | 25 | " | " | " | Hakimpet - Yellahanka | 1.10 |
+| " | 26 | Dakota | " | " | Bangalore - Bombay | 3.15 |
+| " | 27 | " | " | " | Bombay - Karachi | 3.20 |
+| " | 28 | Harvard IIB | " | Self | Instrument Flying | 1.30 |
+
+# TOTALS MONTH
+- Day Pilot: 11.50
+- Night Pilot: 0
+
+# GRAND TOTAL
+687.00
+
+# NOTES
+- Right page, in multi-engine section, for entries Jan 24-25: Bris. Willcock was stationed at Nagpur
+
+# PHOTOS
+None
+
+# OTHER
+- Bottom left summary box, Unit: 202 S.P.
+- Bottom left summary box, Date: 31.1.46.
+- Bottom left summary box, Signature: [illegible]
+- Bottom left summary box, Aircraft Types: Spitfire XV, Harvard
+- Bottom right of page, Signature: F/Lt R.A. Glen
+- Bottom right of page, Assessment: O.C. Ferry Flight 202 S.P.
+- Bottom of table, Totals Carried Forward (Single Engine Day Dual): 91.50
+- Bottom of table, Totals Carried Forward (Single Engine Day Pilot): 570.20
+- Bottom of table, Totals Carried Forward (Passenger): 182.35
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The "Time" column in the LOGBOOK ENTRIES uses the time from either the "Single-Engine Day Pilot" column or the "Passenger" column, depending on which one contained a value for that flight. This was done to fit the single "Time" column in the template.

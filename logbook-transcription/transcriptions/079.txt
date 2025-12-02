@@ -1,0 +1,62 @@
+# FILENAME: 079.jpg
+
+# DATE
+September - October 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+None
+
+# TOTALS PREVIOUS
+- Day Dual: 94.55
+- Day Pilot: None
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| September | 18 | Spitfire XIV | NA846 | self | Karachi - Jodhpur | 1.50 |
+| " | 20 | " | " | self | Jodhpur - Mahareajpur - Jodhpur | 2.20 |
+| " | 21 | " | " | self | Jodhpur - Cawnpore | 2.10 |
+| " | 23 | Stirling | " | self | Allahabad - Karachi | None |
+| October | 5 | Spitfire XIV | NH895 | self | Local Flying | 0.10 |
+| " | 6 | " | " | self | Karachi - Jodhpur | 1.30 |
+| " | 8 | " | " | self | Jodhpur - Allahabad | 2.00 |
+| " | 9 | Stirling | NH901 | self | Allahabad - Delhi | 2.00 |
+| " | 12 | Spitfire | NH905 | self | Delhi - Karachi | 3.00 |
+| " | 13 | " | " | self | Karachi - Jodhpur | 1.35 |
+| " | 14 | Dakota | " | self | Jodhpur - Jodhpur | 0.15 |
+| " | 15 | " | " | self | Jodhpur - Allahabad | 2.15 |
+| " | 16 | Ensign | " | self | Allahabad - Delhi | 2.00 |
+
+# TOTALS MONTH
+- Day Pilot: 20.85
+- Night Pilot: None
+
+# GRAND TOTAL
+644.00
+
+# NOTES
+- Left side below Sept 21 entries: SUMMARY FOR UNIT
+- Left side below SUMMARY FOR UNIT: UNIT
+- Left side below UNIT: DATE
+- Left side below DATE: SIGNATURE
+- Right side next to SUMMARY FOR UNIT block: FINE ART TYPES
+- Right side next to 6.20 total (Single-Engine Day Dual): F/Lt [illegible] Ferry flight.
+- Right side duties without corresponding dates/aircraft: Jodhpur - Jodhpur (Time: 3.30), Jodhpur - Allahabad (Time: 2.00), Delhi - Jodhpur (Time: 1.00), Jodhpur - Jodhpur (Time: 1.30), Jodhpur - Karachi (Time: 2.30)
+- Bottom right, Grand Totals breakdown: Dual (1) 90-20, Pilot (2) 529-00, 2nd Pilot (7) 8-40, Passenger (11) 120-50
+
+# PHOTOS
+None
+
+# OTHER
+None
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: Several entries have inconsistencies between the aircraft type and the column where time is logged (e.g., Dakota in Single-Engine Day Pilot column). These have been transcribed exactly as written.
+- TO REVIEWER: Some multi-engine duties and times listed on the right side of the page do not have corresponding dates or aircraft types on the left. These have been included in the NOTES section.
+- TO REVIEWER: The time "6-20" for September is a total listed under the "Dual" column (1) with a note, not an individual flight entry, so "None" is entered for Sept 23's flight time.

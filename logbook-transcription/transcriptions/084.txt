@@ -1,0 +1,48 @@
+# FILENAME: 084.jpg
+
+# DATE
+May 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+313 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: 636.20
+- Night Dual: None
+- Night Pilot: 1.00
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+None
+
+# TOTALS MONTH
+- Day Pilot: 22.15
+- Night Pilot: None
+
+# GRAND TOTAL
+489.35
+
+# NOTES
+- Between photos (May 1945): May 1945 photographs from the air.
+- Below bottom photo: G. Blenthorne's "stables" with greenhouses having large fig vine.
+- Right side (vertical, top): 313 Squadron KUDERA The War Commissioner had Hede succeeded Vyboral
+- Right side (vertical, bottom): Vybova
+
+# PHOTOS
+- Top photo: Aerial view of a rural landscape with fields, trees, and houses. A part of the aircraft wing and strut is visible in the foreground.
+- Bottom photo: Aerial view of a building complex, possibly a country estate, with several structures including distinct glasshouses/greenhouses.
+
+# OTHER
+- Top right (part of "PILOTS MONTHLY FLYING TIMES" table header): Name W.O. R.A. GLEN. 1331441
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The logbook entries table is blank on this page. The page contains a "PILOTS MONTHLY FLYING TIMES" summary table.
+- TO REVIEWER: "TOTALS PREVIOUS" for Day Pilot was calculated by summing the cumulative "Total No. of operation hours" (579.40 for 30.4.45) and the cumulative sum of monthly "Day (Non-Op)" values from 30.6.44 to 30.4.45 (7.45 + 0.35 + 6.05 + 7.15 + 5.20 + 2.25 + 7.50 + 4.15 + 6.25 + 2.15 + 7.15 = 56.40). The total is 579.40 + 56.40 = 636.20.
+- TO REVIEWER: "TOTALS PREVIOUS" for Night Pilot was calculated by summing the cumulative sum of monthly "Night (Op)" and "Night (Non-Op)" values from 30.6.44 to 30.4.45. "Night (Op)" sums to 0. "Night (Non-Op)" sums to 1.00 (from 30.6.44). The total is 1.00.
+--------------------------------

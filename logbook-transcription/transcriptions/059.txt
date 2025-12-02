@@ -10,41 +10,48 @@ None
 None
 
 # TOTALS PREVIOUS
-- Day Dual: 90.00
-- Day Pilot: 226.30
-- Night Dual: 9.50
-- Night Pilot: 4.40
+- Day Dual: None
+- Day Pilot: None
+- Night Dual: None
+- Night Pilot: None
 
 # LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
 None
 
 # TOTALS MONTH
-- Day Pilot: 226.30
-- Night Pilot: 4.40
+- Day Pilot: None
+- Night Pilot: None
 
 # GRAND TOTAL
 331.00
 
 # NOTES
-- Middle left page: Previous Log Book Stolen on 4th January 1944.
-- Middle left page below "Stolen": The following flying times are approximately correct :-
-    - Tiger Moth: Day Dual 26.00, Day Pilot 27.00
-    - Harvard II: Day Dual 35.00, Day Pilot 45.00, Night Dual 7.30, Night Pilot 4.40
-    - Masters I II & III: Day Dual 29.00, Day Pilot 40.00, Night Dual 2.10
-    - Battle II: Day Pilot 35.00
-    - Martinet: Day Pilot 22.00
-    - Spitfire I & II: Day Pilot 57.30
+- Top left page: Previous Log Book Stolen on 4th January 1944.
+- Left page, below the first note: The following flying times are approximately correct :-
+- Left page, below "approximately correct": R.A. Glen
+- Right page, spanning across columns 1, 2, 3, 4, for 'Single-Engine Aircraft' (listed as part of the approximate flying times):
+  - Tiger Moth: Day Dual 26.00, Day Pilot 27.00
+  - Harvard II: Day Dual 35.00, Day Pilot 46.00, Night Dual 7.30, Night Pilot 4.40
+  - Masters I,II & III: Day Dual 29.00, Day Pilot 40.00, Night Dual 2.20
+  - Spitfire II: Day Pilot 35.00
+  - Martinet: Day Pilot 22.00
+  - Spitfire I & II: Day Pilot 57.30
 
 # PHOTOS
 None
 
 # OTHER
-- Left side of the note "The following flying times are approximately correct": B.P.G. (initials/signature)
-- Bottom left page: GRAND TOTAL [Cols. (1) to (10)] 331 Hrs. 00 Mins.
-- Bottom middle page: Totals Carried Forward
+- Totals Carried Forward - Single-Engine Day Dual: 90.00
+- Totals Carried Forward - Single-Engine Day Pilot: 226.30
+- Totals Carried Forward - Single-Engine Night Dual: 9.50
+- Totals Carried Forward - Single-Engine Night Pilot: 4.40
+- Totals Carried Forward - Passenger: 20.00
 
 # HUMAN COMMENTS
 - This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
-- TO REVIEWER: This page does not contain standard daily logbook entries but rather a summary of flying hours from a previously stolen logbook, entered as notes and previous/carried forward totals.
-- TO REVIEWER: The "TOTALS PREVIOUS" and "TOTALS MONTH" reflect the "Totals Brought Forward" and "Totals Carried Forward" rows respectively. Multi-engine columns were empty for these totals.
-- TO REVIEWER: The Grand Total is taken from the "GRAND TOTAL [Cols. (1) to (10)]" entry at the bottom left.
+- TO REVIEWER: The "Month Year" for DATE is inferred from the note about the logbook being stolen on Jan 4, 1944, as there are no actual flight entries on this page.
+- TO REVIEWER: The "TOTALS PREVIOUS" are marked as None because the "Totals Brought Forward" row at the top of the page is completely empty. The listed flying times under the note are not explicitly 'brought forward' totals, but rather an approximation of past flying times due to the logbook being stolen.
+- TO REVIEWER: The detailed "Totals Carried Forward" for specific flight categories are placed under "OTHER" as the template does not provide dedicated fields for these sub-totals, apart from the single "GRAND TOTAL".
+--------------------------------

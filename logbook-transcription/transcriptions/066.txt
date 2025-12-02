@@ -1,0 +1,62 @@
+# FILENAME: 066.jpg
+
+# DATE
+September 1944
+
+# AIRPORT
+None
+
+# SQUADRON
+313 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: 90.20
+- Day Pilot: 337.15
+- Night Dual: 9.50
+- Night Pilot: 5.20
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| SEPT | 2 | Spitfire V | U | self | Cine Gun | 0.20 |
+| " | " | " | Q | " | Dusk Landings | 0.35 |
+| " | " | " | P | " | Night Flying | 1.00 |
+| " | 3 | " | S | " | Formation | 0.50 |
+| " | " | " | D | " | " | 0.50 |
+| " | 4 | " | Q | " | Cine Gun | 0.50 |
+| " | 6 | " | P | " | Dusk PATROL | 0.40 |
+| " | 7 | " | H | " | Formation | 0.45 |
+| " | " | " | F | " | " | 0.55 |
+| " | 9 | " | P | " | Dusk PATROL | 0.50 |
+| " | 10 | " | K | " | Air Test | 0.30 |
+| " | " | " | F | " | Formation | 0.15 |
+| " | 11 | " | U | " | Dusk PATROL | 0.45 |
+| " | 12 | " | T | " | Dusk PATROL | 1.00 |
+| " | " | " | D | " | Squadron Formation | 1.05 |
+
+# TOTALS MONTH
+- Day Pilot: 10.15
+- Night Pilot: 1.00
+
+# GRAND TOTAL
+454.00
+
+# NOTES
+- Mid-right, under the entries: M. Smith F/Lt O.C. B. Flt.
+- Bottom left, in "SUMMARY FOR September 1944" box: UNIT: 313 Squadron. DATE: 30/9/44. SIGNATURE: R. A. Glen.
+- Bottom right, below log entries: W.A. Cale S/LDR O.C. 313 Sqdn.
+
+# PHOTOS
+None
+
+# OTHER
+- Bottom left, in summary box: R. A. Glen (signature)
+- Mid-right, below log entries: M. Smith F/Lt O.C. B. Flt. (signature and rank/role)
+- Bottom right, below log entries: W.A. Cale S/LDR O.C. 313 Sqdn. (signature and rank/role)
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The sum of individual Day Pilot entries on this page (8.90) does not match the "TOTALS MONTH Day Pilot" value (10.15) which is confirmed by the "Totals Carried Forward" calculation. There appears to be 1.25 hours of Day Pilot time missing from the visible logbook entries.
+- TO REVIEWER: The "Squadron Formation" duty for Date 12 is written across two lines, with the second part aligned with the "D" aircraft entry.
+- TO REVIEWER: The name "W.A. Cale" for the S/LDR signature is an interpretation; the last name is particularly difficult to read.
+--------------------------------

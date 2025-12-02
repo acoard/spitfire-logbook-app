@@ -1,0 +1,64 @@
+# FILENAME: 083.jpg
+
+# DATE
+February - March 1946
+
+# AIRPORT
+None
+
+# SQUADRON
+202 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: 91.50
+- Day Pilot: 570.20
+- Night Dual: 0.00
+- Night Pilot: 0.00
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| February | 5 | Harvard IIB | | self | Instrument Flying | 1.00 |
+| February | 5 | Spitfire XIV | TZ 162 | self | Acceptance Test | 0.30 |
+| February | 6 | " | " | self | Karachi - Jodhpur | 1.45 |
+| February | 6 | " | " | self | Jodhpur - Allahabad | 2.10 |
+| February | 6 | " | " | self | Allahabad - Ranchi | 1.15 |
+| February | 7 | " | " | self | Calcutta - Allahabad | 0.00 |
+| February | 8 | Sunderland | | self | Allahabad - Karachi | 0.00 |
+| February | 27 | Spitfire XIV | | self | Acceptance Test | 0.30 |
+| March | 2 | Spitfire XIV | TZ 190 | self | Acceptance Test | 0.30 |
+| March | 3 | " | " | self | Karachi - Mahargah | 1.40 |
+| March | 3 | " | " | self | Jodhpur - Maharajpur | 1.20 |
+| March | 5 | Dakota | | self | Delhi - Allahabad | 1.45 |
+| March | 6 | Harvard | | self | Allahabad - Ranchi | 2.00 |
+| March | 16 | Empire Flying Boat | | self | Calcutta - Gwalior | 5.30 |
+| March | 17 | " | " | self | Gwalior - Karachi | 6.00 |
+
+# TOTALS MONTH
+- Day Pilot: 25.55
+- Night Pilot: 0.00
+
+# GRAND TOTAL
+697.40
+
+# NOTES
+- Right page, remarks column, next to February 7th and 8th entries: Had to deliver a Spitfire to Ranchi - of all places + so stayed on with F.P.O. at Ranchi for 10 Days. What a life.
+- Right page, remarks column, next to March 5th-17th entries: After F/Lt Federman (a ferry pilot) married in Allahabad Dennis Yearty flew me to Ranchi. This time (another pilot) - it was my pleasure to show him how to do the trip - + stay on for another week! Said good bye to Frank D & D. This was my last visit at my "daugab". My ticket was coming up. Travelled to Bombay by train and on the M.V. Durban (Castle) - a tie over 6 years in P.A.F.
+
+# PHOTOS
+None
+
+# OTHER
+- Summary for February - Unit: 202 S.P.
+- Summary for February - Date: 28/3/46
+- Summary for February - Signature: R.A. Glen
+- Summary for March - Unit: 202 S.P.
+- Summary for March - Date: 31/3/46
+- Summary for March - Signature: R.A. Glen
+- Bottom right of the page, below March summary: 1st Lt R.A. Glen
+- Bottom right of the page, below March summary: 16.15 years in RAF
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: There are discrepancies in the logbook's own summation for total flight hours and totals carried forward compared to the sum of individual entries. I have transcribed the stated totals (e.g., 6.10 for Feb Day Pilot, 3.30 for March SE Day Pilot, 16.15 for March ME 1st Pilot) for the "TOTALS MONTH" and the "GRAND TOTAL" as written.
+- TO REVIEWER: For February 7th and 8th, the logbook owner was a passenger for 3.00 and 5.30 hours respectively. For March 5th, 6th, 16th, and 17th, the flights were multi-engine, with the pilot logging 1.45, 2.00, 5.30, and 6.00 hours respectively as 1st Pilot. The "Time" column in the logbook entries reflects the pilot time for the specific flight type or 0.00 if it was passenger time.

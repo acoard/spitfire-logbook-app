@@ -10,40 +10,47 @@ None
 None
 
 # TOTALS PREVIOUS
-- Day Dual: None
-- Day Pilot: None
-- Night Dual: None
-- Night Pilot: None
+None
 
 # LOGBOOK ENTRIES
 None
 
 # TOTALS MONTH
-- Day Pilot: None
-- Night Pilot: None
+None
 
 # GRAND TOTAL
 None
 
 # NOTES
-- Top left page: T. 91-4759. Wt. 324. 4/43. 15,000 Bks. W. & S. Ltd. 165960F.
-- Center left page: INSTRUCTIONS [see K.R. & A.C.I., para. 786]
-- Left page, Instruction 1: This book is an official document and is the property of His Majesty's Government.
-- Left page, Instruction 2: An accurate and detailed record is to be kept in the log of all flights undertaken by the individual to whom it relates.
-- Left page, Instruction 3: Monthly flying will be analysed by aircraft types and inserted in red ink. The stamp will be inserted on the left-hand page appropriately aligned to the ruling.
-- Left page, Instruction 4: The annual summary and assessment will be completed on Form 414A and inserted in the appropriate page of the log. This form will also be used when a pilot is posted or attached to another unit for flying duties.
-- Top right page: CERTIFICATES OF QUALIFICATION AS FIRST PILOT [K.R. & A.C.I., para. 805, clause 5]
+- Top left page header: T. 91-4759. Wt. 324. 4/43. 15,000 Bks. W. & S. Ltd. 165960F.
+- Mid left page: INSTRUCTIONS [see K.R. & A.C.I., para. 786]
+- Instruction 1: This book is an official document and is the property of His Majesty's Government.
+- Instruction 2: An accurate and detailed record is to be kept in the log of all flights undertaken by the individual to whom it relates.
+- Instruction 3: Monthly flying will be analysed by aircraft types and inserted in red ink. The stamp will be inserted on the left-hand page appropriately aligned to the ruling.
+- Instruction 4: The annual summary and assessment will be completed on Form 414A and inserted in the appropriate page of the log. This form will also be used when a pilot is posted or attached to another unit for flying duties.
 
 # PHOTOS
 None
 
 # OTHER
-- Top right page, Name: R.A. Glen
-- Top right page, Rank: u/b
-- Right page, Certification table (i) header: Certified that the above named has qualified as a First Pilot (day only)
-- Right page, Certification table (ii) header: Certified that the above named has qualified as a First Pilot
+- CERTIFICATES OF QUALIFICATION AS FIRST PILOT
+- Subtitle: [K.R. & A.C.I., para. 805, clause 5]
+- Name: R.A. Glen
+- Rank: W/O
+- (i) Certified that the above named has qualified as a First Pilot (day only)
+| On (Type) | Date | Unit | Signature and Rank |
+|---|---|---|---|
+| | | | |
+| | | | |
+| | | | |
+| | | | |
+- (ii) Certified that the above named has qualified as a First Pilot
+| On (Type) | Date | Unit | Signature and Rank |
+|---|---|---|---|
+| | | | |
+| | | | |
+| | | | |
+| | | | |
 
 # HUMAN COMMENTS
 - This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
-- TO REVIEWER: This page is an instructions and certification page, not a traditional flight logbook entry page, hence most sections are marked "None".
-- TO REVIEWER: The handwritten name is "R.A. Glen" and the rank appears to be "u/b".

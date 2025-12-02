@@ -1,0 +1,44 @@
+# FILENAME: 086.jpg
+
+# DATE
+None
+
+# AIRPORT
+None
+
+# SQUADRON
+None
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: None
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+None
+
+# TOTALS MONTH
+- Day Pilot: None
+- Night Pilot: None
+
+# GRAND TOTAL
+None
+
+# NOTES
+- Right page, top: Endorsement.
+- Right page, middle: Flying Accident – Lysander V.9512. On 26th August 1945. “ CARELESSNESS – TAXYING ”
+
+# PHOTOS
+None
+
+# OTHER
+- Right page, middle: G.R. Kay F/P.
+- Right page, middle: O.C. Ferry Flight 202. S.P.
+- Right page, bottom: Authority 108 W/S 4151/70/Air dated 26th Oct. 1945.
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+--------------------------------

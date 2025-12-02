@@ -1,0 +1,47 @@
+# FILENAME: 078.jpg
+
+# DATE
+August 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+208 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: 514.55
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| August | 28 | Dakota | | self | Allahabad - Delhi | 2.45 |
+| " | 29 | " | | " | Delhi - Jodhpur | 2.00 |
+| " | | " | | " | Jodhpur - Karachi | 2.40 |
+
+# TOTALS MONTH
+- Day Pilot (Spitfire IV): 4.10
+- Day Pilot (Lysander): 23.30
+- Night Pilot: None
+
+# GRAND TOTAL
+630.05
+
+# NOTES
+- Left side of summary box: Types: Spitfire IV, Lysander
+
+# PHOTOS
+None
+
+# OTHER
+- Summary box: SIGNATURE R.A. Glen
+- Bottom right of page: F/Lt. S.K. Haytor. O.C. Ferry Flt. 208 S.P.
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The 'Pilot' column in the logbook entries table is blank in the original image, but per instructions, it is transcribed as "self" and ditto marks.
+- TO REVIEWER: The 'Time' for the logbook entries is taken from the 'PASSENGER' column (col 11) in the original image, as the pilot columns for multi-engine aircraft (cols 5, 6, 7, 8, 9, 10) are empty for these flights.
+- TO REVIEWER: For 'TOTALS MONTH', there are two distinct 'Day Pilot' values (Spitfire IV and Lysander) listed in the summary. These have been transcribed separately rather than summed to preserve the original breakdown.

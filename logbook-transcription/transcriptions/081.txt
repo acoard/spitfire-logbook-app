@@ -1,0 +1,60 @@
+# FILENAME: 081.jpg
+
+# DATE
+December 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+202 SP
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: 549.45
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| December | 1 | Spitfire XIV | 856 | self | Calcutta - Myas | 15.05 |
+| " | 2 | " | " | " | Myas - Rangoon | 1.30 |
+| " | 3 | " | " | " | Rangoon - Bangkok | 1.30 |
+| " | 4 | Dakota | " | " | Bangkok - Rangoon | 1.30 |
+| " | 5 | Sunderland | " | " | Rangoon - Calcutta | 0.00 |
+| " | 7 | " | " | " | Calcutta - Karachi | 0.00 |
+| " | 16 | Expeditor | " | self | Karachi - Jodhpur | 0.00 |
+| " | 17 | Spitfire XIV | 793 | " | Jodhpur - Allahabad | 2.15 |
+| " | 18 | " | " | " | Allahabad - Calcutta | 2.00 |
+| " | 31 | Sunderland | " | " | Calcutta - Karachi | 0.00 |
+
+# TOTALS MONTH
+- Day Pilot: 8.45
+- Night Pilot: None
+
+# GRAND TOTAL
+673 Hrs 40 Mins
+
+# NOTES
+- Top left, under Duty column (November Summary): Summary for November, Unit 202 SP, Date 30/11/45, Signature Q.A. Glen. Aircraft Types. F/LT O.C. Ferry Flight.
+- Right of November Summary (time 15-05): R.A. Glen F/LT O.C. Ferry Flight.
+- Remarks column next to December 5th, 7th, and 16th entries (Passenger times 2.15, 4.30, 8.30): Developed engine trouble (!) in Calcutta - so took the train to Ranchi for Christmas. (Who could ask for anything more) (And when I got back to base why I had stayed with my parents for an extra week!)
+- Bottom left, under Duty column (December Summary): Summary for December, Unit 202 SP, Date 31/12/45, Signature Q.A. Glen. Aircraft Types. F/LT O.C. Ferry Flight.
+- Right of December Summary (time 8-45): R.A. Glen F/LT O.C. Ferry Flight.
+
+# PHOTOS
+None
+
+# OTHER
+- Totals Brought Forward - Passenger: 142.00
+- Totals Carried Forward - Single-Engine Pilot: 558.30
+- Totals Carried Forward - Passenger: 169.00
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The page contains summaries for two months (November and December) and individual flight entries for December. The "DATE" field reflects the month of primary entries.
+- TO REVIEWER: The "TOTALS PREVIOUS" section only includes "Day Pilot" as it's the only one of the template categories with a value from "Totals Brought Forward". Other "Totals Brought Forward" values (e.g., Passenger time) are noted in "OTHER".
+- TO REVIEWER: For December 4th, an aircraft of type 'Dakota' (multi-engine) has its time recorded under the 'Single-Engine Day Pilot' column.
+- TO REVIEWER: For December 5th, 7th, 16th, and 31st, "self" is listed as the pilot in the logbook's "Pilot or 1st Pilot" column, but time is recorded in the 'Passenger' column. These flights are transcribed with 0.00 time in the "Time" column, and the remarks are noted under 'NOTES'.
+- TO REVIEWER: The "TOTALS MONTH" value (8.45 Day Pilot) is taken from the "Summary for December" line, which does not appear to be a direct sum of the individual pilot flight entries listed on this page for December (which sum to 23.10).

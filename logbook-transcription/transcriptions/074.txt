@@ -1,0 +1,53 @@
+# FILENAME: 074.jpg
+
+# DATE
+June 1945
+
+# AIRPORT
+None
+
+# SQUADRON
+313 Squadron
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: 478.05
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| June | 4 | Spitfire IX | O | self | Formation. Escort King & Queen from Gruy to Warmwell & back. To Wallisham | 1.50 |
+| " | 7 | " | W | " | Fighter Affiliation | 3.05 |
+| " | 7 | " | " | " | " | .50 |
+| " | 18 | " | " | " | From Wattisham | 1.00 |
+| " | 18 | " | " | " | " | .30 |
+
+# TOTALS MONTH
+- Day Pilot: 8.55
+- Night Pilot: None
+
+# GRAND TOTAL
+593.30
+
+# NOTES
+- Next to June 4th entry in "Remarks" column: A good Honour for- but no all is fine.
+- Under log entries, before "Totals Brought Forward" (June 4th): The Squadron to escort their Majesties to Cowes from out of Goo.
+- Under the above note: And then a WAAF-rom mo from Biggin Hill to ask if I'd be interested in ferrying Spits all over in the Far East. Ferrying for pilots I didn't have to be asked twice.
+- Far right, in Pilot column (13) under "INSTR/CLOUD FLYING": ?
+
+# PHOTOS
+None
+
+# OTHER
+- Left side, under "SUMMARY FOR June per 1945": Signature of L. L. Duncan F/L Q.C. B. Flt.
+- Left side, under "SUMMARY FOR 313 Sqdn 1944-45":
+    - TYPES: Spitfire (Day 216.35, Night 1.00), Tiger Moth (Day 1.00), Auster (Day .10)
+    - OPERATIONAL: 133.05
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The time format for the grand total was "593 .... Hrs. 30 .... Mins.", which has been transcribed as "593.30" following the instruction to assume dashes are periods and not convert 7-30 to 7.5.
+- TO REVIEWER: The "Duty" for June 4th combines "Formation" with its description, as the description details the flight's purpose.
+- TO REVIEWER: Several notes were extracted from the "Remarks" column and areas below the log entries.

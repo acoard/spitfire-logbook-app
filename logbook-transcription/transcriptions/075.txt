@@ -1,0 +1,55 @@
+# FILENAME: 075.jpg
+
+# DATE
+July 1945
+
+# AIRPORT
+Karachi
+
+# SQUADRON
+None
+
+# TOTALS PREVIOUS
+- Day Dual: None
+- Day Pilot: 95.30
+- Night Dual: None
+- Night Pilot: None
+
+# LOGBOOK ENTRIES
+| Month | Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|---|
+| July | 11 | Dakota | RN 234 | self | M.R.C.A. 2 Flys over London Karachi | 5.45 |
+| July | 12 | " | " | " | Convoy Patrol (Suez) | 3.00 |
+| July | 13 | " | " | " | M.R.C.A. | 6.00 |
+| July | 19 | Ensign | " | " | Troop Carrying | 4.00 |
+| July | 22 | Dakota | " | " | M.R.C.A. | 6.00 |
+| July | 25 | Lysander | FLS | " | Air Test | 4.35 |
+| July | 26 | " | " | " | Convoy Patrol | 2.30 |
+| July | 28 | Ensign | " | " | Base flying | 2.00 |
+| July | 30 | Lysander | TM P- | " | Convoy Patrol | 5.00 |
+
+# TOTALS MONTH
+- Day Pilot: 43.00
+- Night Pilot: 0.00
+
+# GRAND TOTAL
+602 Hrs. 95 Mins.
+
+# NOTES
+- Top of "Duty" column: in the next 9 months or a private diary
+- Remarks column (July 11th): 30 hour ferry - over 3 days London - Karachi
+- Remarks column (July 12th): 1 min. 60 over 500 feet & [illegible] and this official form for flying work in Karachi
+- Remarks column (mid-page): For all my Service in India DANGH ROAD - about 6 miles from Karachi
+- Remarks column (mid-page below previous note): Only 1/2 work often arrived in India to track down Uncle Frank in Calcutta
+- Remarks column (July 28th): I was based at R.A.F. Stn. Karachi
+
+# PHOTOS
+None
+
+# OTHER
+None
+
+# HUMAN COMMENTS
+- This document has not been reviewed by a human yet. Update this section after reviewing the transcription.
+- TO REVIEWER: The transcription of "GRAND TOTAL" as "602 Hrs. 95 Mins." directly follows the instruction "Do NOT modify what's written". However, the instruction "Use decimal points instead of dashes when transcribing (e.g. 1.15 not 1:15 or 1-15)" might imply conversion to a decimal hour format even from "Hrs. Mins.". Please clarify which interpretation is preferred.
+- TO REVIEWER: The note for July 12th contains "1 min. 60". It's transcribed as written, but if it is actually a duration, it would be unconventional.
