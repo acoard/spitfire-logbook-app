@@ -1,117 +1,56 @@
-FILENAME:
+# FILENAME: 063.jpg
 
-DATE: June 1944
+# DATE
+June 1944
 
-AIRPORT: TANGMERE
+# AIRPORT
+TANGMERE
 
-LOGBOOK:
+# SQUADRON
+313 SQUADRON
 
-**Squadron:** 313 Squadron
+# TOTALS PREVIOUS
+- Day Dual: 90.20
+- Day Pilot: 305.45
+- Night Dual: 9.50
+- Night Pilot: 5.20
 
-**Pre-flight Totals (Totals Brought Forward):**
-*   Day Dual: 90.20
-*   Day Pilot: 305.45
-*   Night Dual: 9.50
-*   Night Pilot: 5.20
+# LOGBOOK ENTRIES
+| Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|
+| 22 | Spitfire IX | R | S.F.P | BEACH HEAD PATROL | 2.15 |
+| 23 | " | " | " | CONVOY PATROL | 1.55 |
+| " | " | " | " | BEACH HEAD PATROL | 2.05 |
+| 24 | " | " | " | " | 2.05 |
+| " | " | " | " | Air Test | .30 |
+| 28 | " | Z | " | BASE - B.10. A.L.G IN FRANCE | .45 |
+| " | " | " | " | ARMED RECCO | 1.00 |
+| " | " | " | " | CONVOY PATROL | 1.20 |
+| 29 | " | " | " | FRONT LINE PATROL | 1.05 |
+| " | " | " | " | " | 1.10 |
+| " | " | " | " | B.10. A.L.G IN FRANCE - BASE | .35 |
 
-**Flight Entries:**
+# TOTALS MONTH
+- Day Pilot: 51.15
+- Night Pilot: .40
 
-*   **June 22:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: R
-    *   Pilot: S/L P
-    *   Duty: BEACH HEAD PATROL
-    *   Day Pilot Time: 2.15
+# GRAND TOTAL
+426.00
 
-*   **June 23:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: R
-    *   Pilot: S/L P
-    *   Duty: CONVOY PATROL
-    *   Day Pilot Time: 1.55
+# NOTES
+- The first of 2 nights just behind the Front Line - under "Edifice".
+- Got shot up - my planes tailplane sustaining Ack Ack damage.
+- Back to B.10. A.L.G. - it was after we landed back from France - that we had some P.R. photographs taken of our picture and the C.O.'s plane. (See Photos in "Memorabilia Album")
 
-*   **June 23:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: R
-    *   Pilot: S/L P
-    *   Duty: BEACH HEAD PATROL
-    *   Day Pilot Time: 2.05 (Entry #17)
+# PHOTOS
+- See Photos in "Memorabilia Album"
 
-*   **June 24:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: R
-    *   Pilot: S/L P
-    *   Duty: (No specific duty listed)
-    *   Day Pilot Time: 2.05 (Entry #18)
-
-*   **June 24:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: R
-    *   Pilot: S/L P
-    *   Duty: Air Test
-    *   Day Pilot Time: .30
-
-*   **June 28:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: Z
-    *   Pilot: (Blank)
-    *   Duty: Base - B.10. ALG in FRANCE
-    *   Day Pilot Time: .45
-
-*   **June 28:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: Z
-    *   Pilot: (Blank)
-    *   Duty: Armed Recco
-    *   Day Pilot Time: 1.00 (Entry #19)
-
-*   **June 29:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: Z
-    *   Pilot: (Blank)
-    *   Duty: Convoy Patrol
-    *   Day Pilot Time: 1.20
-
-*   **June 29:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: Z
-    *   Pilot: (Blank)
-    *   Duty: Front Line Patrol
-    *   Day Pilot Time: 1.05 (Entry #20)
-
-*   **June 29:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: Z
-    *   Pilot: (Blank)
-    *   Duty: (No specific duty listed)
-    *   Day Pilot Time: 1.10 (Entry #21)
-
-*   **June 29:**
-    *   Aircraft Type: Spitfire IX
-    *   Aircraft No.: Z
-    *   Pilot: (Blank)
-    *   Duty: B.10. ALG in FRANCE - Base
-    *   Day Pilot Time: .35
-
-**Summary for June 1944:**
-*   Unit: 313 SQDN
-*   Date: 30.6.44
-*   Signature: R.A. Glen
-*   Aircraft Type: Spitfire IX
-*   Total Day Flights: 51 hours 15 minutes
-*   Total Night Flights: 0 hours 40 minutes
-
-**Grand Total [Cols. (1) to (10)]:** 426 Hrs. 00 Mins.
-
-NOTES:
-*   The first of 2 nights just behind the Front Line - under Loiffie.
-*   Got shot up - my plane's tailplane sustaining Ack Ack damage.
-*   Back to S.Ply. - It was after we landed back from France - that we had some PR photographer to take our picture around the C.O.'s plane.
-*   Signed: R. Wood F/Lt. O.C. 'B' Flt.
-*   Signed: Rochmal S/LDR O.C. 313 Sqdn.
-
-PHOTOS:
-*   (See photos in "Memorabilia Album")
-
-OTHER:
-*   Squadron: 313 Squadron
+# OTHER
+- Signatures:
+    - I. wood F/Lt. O.C. 'B' Flt.
+    - H.W. Calog S/LDR O.C. 313 Sqdn.
+    - R.A. Gren (from summary table)
+- Summary for June 1944:
+    - Unit: 313 SQDN
+    - Date: 30. 6. 44.
+    - Aircraft Type Summary: SPITFIRE IX

@@ -16,23 +16,50 @@ async function transcribe(fileName) {
         {
           parts: [
             {
-              text: `Please transcribe the following file into the following structure:
+              text: `Transcribe this flight logbook page into strict Markdown format. 
+Follow this exact template structure. Do not deviate.
 
-FILENAME:
+# FILENAME: ${fileName}
 
-DATE
+# DATE
+[Month Year]
 
-AIRPORT
+# AIRPORT
+[Airport Name]
 
-LOGBOOK:
+# SQUADRON
+[Squadron Name]
 
-NOTES:
+# TOTALS PREVIOUS
+- Day Dual: [Value]
+- Day Pilot: [Value]
+- Night Dual: [Value]
+- Night Pilot: [Value]
 
-PHOTOS: 
+# LOGBOOK ENTRIES
+| Date | Aircraft Type | No. | Pilot | Duty | Time |
+|---|---|---|---|---|---|
+[Logbook rows here. Use " for ditto marks if present in original.]
 
-OTHER:
+# TOTALS MONTH
+- Day Pilot: [Value]
+- Night Pilot: [Value]
 
-Leave any section blank if there is no info.`
+# GRAND TOTAL
+[Value]
+
+# NOTES
+- [Note line 1]
+- [Note line 2]
+
+# PHOTOS
+- [Photo descriptions]
+
+# OTHER
+- [Signatures, etc]
+
+If a section is empty or not present, write "None".
+Do not add conversational text. Only output the Markdown.`
             },
             {
               inlineData: {
@@ -61,7 +88,7 @@ async function run() {
     const transcription = await transcribe(fileName);
     
     if (transcription) {
-      console.log(transcription);
+      // console.log(transcription); // Optional: print to console
       
       const outputDir = path.join("logbook-transcription", "transcriptions");
       await fs.mkdir(outputDir, { recursive: true });
